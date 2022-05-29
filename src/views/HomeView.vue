@@ -48,7 +48,13 @@ export default {
 </script>
 
 <style scoped>
-.row {
-  margin-top: 100px;
+body {
+  background-image: url("../assets/1.jpg");
+}
+#carousel-1 {
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+  box-shadow: 0 1em 1em gray;
 }
 </style>

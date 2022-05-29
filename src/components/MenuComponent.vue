@@ -33,6 +33,7 @@ export default {
   box-shadow: 0 0 1em gray;
   padding-right: 10px;
   padding-left: 10px;
+  /* margin-bottom: 1rem; */
 }
 #nav-item {
   font-size: 20px;

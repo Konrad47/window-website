@@ -1,4 +1,4 @@
-<template>
+<template >
   <div id="app">
     <MenuComponent />
     <router-view />
@@ -13,6 +13,15 @@ export default {
   components: {
     MenuComponent,
   },
+  data() {
+    return {
+      image: {
+        backgroundImage: `url(${require("@/assets/1.jpg")})`,
+        width: "100%",
+        height: "100%",
+      },
+    };
+  },
 };
 </script>
 
@@ -24,6 +33,12 @@ html {
   width: 100%;
   min-height: 100%;
   background-color: #e7e7e9;
+  /* background-image: url("@/assets/1.jpg"); */
+}
+body {
+  background-color: red;
+  background-image: url("@/assets/1.jpg");
+  /* :style="image" */
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
