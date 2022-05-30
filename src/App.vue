@@ -2,16 +2,19 @@
   <div id="app">
     <MenuComponent />
     <router-view />
+    <!-- :style="image" -->
+    <FooterComponent />
   </div>
 </template>
 <script>
 // @ is an alias to /src
 import MenuComponent from "@/components/MenuComponent.vue";
-
+import FooterComponent from "@/components/FooterComponent.vue";
 export default {
   name: "App",
   components: {
     MenuComponent,
+    FooterComponent,
   },
   data() {
     return {
@@ -36,8 +39,6 @@ html {
   /* background-image: url("@/assets/1.jpg"); */
 }
 body {
-  background-color: red;
-  background-image: url("@/assets/1.jpg");
   /* :style="image" */
 }
 #app {
@@ -49,6 +50,11 @@ body {
   background-color: #e7e7e9;
 }
 .router-link-active {
-  border-bottom: 2px solid #2c3e50;
+  border-bottom: 2px solid #2e8b57;
+}
+@media (max-width: 992px) {
+  .router-link-active {
+    border: none;
+  }
 }
 </style>

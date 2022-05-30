@@ -4,6 +4,7 @@ import HomeView from "../views/HomeView.vue";
 import AboutUsView from "../views/AboutUsView";
 import OfferView from "../views/OfferView.vue";
 import ContactView from "../views/ContactView.vue";
+import SingleOfferView from "../views/SingleOfferView.vue";
 
 Vue.use(VueRouter);
 
@@ -22,6 +23,12 @@ const routes = [
     path: "/offer",
     name: "offer",
     component: OfferView,
+  },
+  {
+    path: "/offer/:id",
+    name: "singleOffer",
+    component: SingleOfferView,
+    props: true,
   },
   {
     path: "/contact",

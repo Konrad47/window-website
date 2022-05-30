@@ -312,23 +312,23 @@ export default new Vuex.Store({
         ],
         linkdesc: [
           {
-            name: "Karta produktu AS 75 drzwi: ",
+            name: "Karta produktu AS 75 okna: ",
           },
           {
-            name: "Karta produktu AS 75 okna: ",
+            name: "Karta produktu AS 75 drzwi: ",
           },
         ],
         link: [
           {
-            name: "https://www.aluron.pl/wp-content/uploads/2020/03/AS_75_drzwi.pdf",
+            name: "https://www.aluron.pl/wp-content/uploads/2020/03/AS_75_okno.pdf",
           },
           {
-            name: "https://www.aluron.pl/wp-content/uploads/2020/03/AS_75_okno.pdf",
+            name: "https://www.aluron.pl/wp-content/uploads/2020/03/AS_75_drzwi.pdf",
           },
         ],
         numberofImage: 2,
-        image1: require("@/assets/as75/AS75_systemy_aluminiowe_drzwi.jpg"),
-        image2: require("@/assets/as75/AS75_systemy_aluminiowe_okno.jpg"),
+        image1: require("@/assets/as75/AS75_systemy_aluminiowe_okno.jpg"),
+        image2: require("@/assets/as75/AS75_systemy_aluminiowe_drzwi.jpg"),
       },
       // AS 75EI
       {
