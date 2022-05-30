@@ -50,6 +50,7 @@ export default {
   color: #2c3e50;
 }
 #windows {
+  justify-content: center;
   display: inline-grid;
   grid-template-columns: auto auto auto;
   width: auto;

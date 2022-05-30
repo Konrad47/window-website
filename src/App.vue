@@ -1,8 +1,8 @@
 <template >
   <div id="app">
     <MenuComponent />
-    <router-view />
-    <!-- :style="image" -->
+    <router-view :style="image" />
+
     <FooterComponent />
   </div>
 </template>

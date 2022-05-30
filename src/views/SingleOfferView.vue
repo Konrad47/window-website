@@ -1,63 +1,65 @@
 <template>
   <div>
-    <b-card border-variant="secondary">
-      <b-container class="bv-example-row bv-example-row-flex-cols">
-        <b-row>
-          <b-col align-self="baseline">
-            <div>
-              <b-img id="img1" :src="getWindow.image1" width="512"></b-img>
-            </div>
-            <!-- <p id="link" v-for="(link, i) in getWindow.linkdesc" :key="i">
+    <div id="element">
+      <b-card border-variant="secondary">
+        <b-container class="bv-example-row bv-example-row-flex-cols">
+          <b-row>
+            <b-col align-self="baseline">
+              <div>
+                <b-img id="img1" :src="getWindow.image1" width="512"></b-img>
+              </div>
+              <!-- <p id="link" v-for="(link, i) in getWindow.linkdesc" :key="i">
               {{ link.name }} <a :href="getWindow.link[i].name">POBIERZ</a>
             </p> -->
-            <p id="link">
-              {{ getWindow.linkdesc[0].name }}
-              <a :href="getWindow.link[0].name">POBIERZ</a>
-            </p>
-          </b-col>
-          <b-col align-self="stretch">
-            <h1>{{ getWindow.size }}</h1>
-            <h4>{{ getWindow.name }}</h4>
-            <!-- <p
+              <p id="link">
+                {{ getWindow.linkdesc[0].name }}
+                <a :href="getWindow.link[0].name">POBIERZ</a>
+              </p>
+            </b-col>
+            <b-col align-self="stretch">
+              <h1>{{ getWindow.size }}</h1>
+              <h4>{{ getWindow.name }}</h4>
+              <!-- <p
               class="mb-0"
               v-for="(description, i) in getWindow.description"
               :key="i"
             >
               {{ description.name }}
             </p> -->
-            <p>{{ getWindow.description[0].name }}</p>
-            <h4>{{ getWindow.description2 }}</h4>
-            <ul v-for="(dot, i) in getWindow.dots" :key="i">
-              <li>{{ dot.name }}</li>
-            </ul>
-          </b-col>
-        </b-row>
-        <b-row>
-          <b-col>
-            <h5>{{ getWindow.descriptionOfTable }}</h5>
-            <table v-if="getWindow.isTableHere == true">
-              <tr v-for="(table, i) in getWindow.table" :key="i">
-                <td>{{ table.name }}</td>
-                <td>{{ table.value }}</td>
-              </tr>
-            </table>
-            <p v-else>{{ getWindow.description3 }}</p>
-          </b-col>
-          <b-col>
-            <div>
-              <b-img id="img1" :src="getWindow.image2" width="512"></b-img>
-            </div>
-            <p id="link" v-if="getWindow.linkdesc.length == 2">
-              {{ getWindow.linkdesc[1].name }}
-              <a :href="getWindow.link[1].name">POBIERZ</a>
-            </p>
-          </b-col>
-        </b-row>
-      </b-container>
-      <b-media right-left vertical-align="center">
-        <template #aside> </template>
-      </b-media>
-    </b-card>
+              <p>{{ getWindow.description[0].name }}</p>
+              <h4>{{ getWindow.description2 }}</h4>
+              <ul v-for="(dot, i) in getWindow.dots" :key="i">
+                <li>{{ dot.name }}</li>
+              </ul>
+            </b-col>
+          </b-row>
+          <b-row>
+            <b-col>
+              <h5>{{ getWindow.descriptionOfTable }}</h5>
+              <table v-if="getWindow.isTableHere == true">
+                <tr v-for="(table, i) in getWindow.table" :key="i">
+                  <td>{{ table.name }}</td>
+                  <td>{{ table.value }}</td>
+                </tr>
+              </table>
+              <p id="des3" v-else>{{ getWindow.description3 }}</p>
+            </b-col>
+            <b-col>
+              <div>
+                <b-img id="img1" :src="getWindow.image2" width="512"></b-img>
+              </div>
+              <p id="link" v-if="getWindow.linkdesc.length == 2">
+                {{ getWindow.linkdesc[1].name }}
+                <a :href="getWindow.link[1].name">POBIERZ</a>
+              </p>
+            </b-col>
+          </b-row>
+        </b-container>
+        <b-media right-left vertical-align="center">
+          <template #aside> </template>
+        </b-media>
+      </b-card>
+    </div>
   </div>
 </template>
 
@@ -77,10 +79,13 @@ export default {
 </script>
 
 <style scoped>
+#element {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .card {
   width: 80%;
   margin: auto;
-  margin-top: 10px;
   box-shadow: 0 0 0.5em #2c3e50;
 }
 .col {
@@ -100,6 +105,9 @@ p {
   text-align: left;
   text-indent: 1.5em;
   margin-top: 0;
+}
+#des3 {
+  border: 2px solid #2e8b57;
 }
 li {
   text-align: left;
