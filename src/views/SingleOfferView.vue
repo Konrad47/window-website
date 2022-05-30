@@ -102,14 +102,20 @@ h5 {
   font-weight: bold;
 }
 p {
-  text-align: left;
+  font-size: 20px;
+  text-align: justify;
   text-indent: 1.5em;
   margin-top: 0;
 }
 #des3 {
-  border: 2px solid #2e8b57;
+  /* border: 2px solid #2e8b57; */
+  font-size: 20px;
+  margin-top: 80px;
+  margin-left: 55px;
+  max-width: 512px;
 }
 li {
+  font-size: 18px;
   text-align: left;
   margin-top: 0;
 }
@@ -129,9 +135,15 @@ th,
 td {
   border: 2px solid #2c3e50;
   text-align: left;
+  padding: 10px;
 }
 table {
   margin: auto;
+}
+@media (max-width: 960px) {
+  #des3 {
+    margin: auto;
+  }
 }
 @media (max-width: 750px) {
   img {

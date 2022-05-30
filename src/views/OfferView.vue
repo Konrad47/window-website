@@ -13,7 +13,7 @@
           :title="getWindows[i].name"
           :img-src="getWindows[i].image1"
           img-top
-          style="max-width: 20rem"
+          style="max-width: 18rem"
         >
           <b-card-text> </b-card-text>
         </b-card>
