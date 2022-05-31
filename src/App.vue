@@ -59,9 +59,9 @@ body {
   justify-content: space-between;
   display: flex;
   height: 70px;
-  background: -moz-linear-gradient(left, #2e8b57 0%, #bdd97d 100%);
-  background: -webkit-linear-gradient(left, #2e8b57 0%, #bdd97d 100%);
-  background: linear-gradient(to right, #2e8b57 0%, #bdd97d 100%);
+  background: -moz-linear-gradient(left, #2e8b57 0%, #2c3e50 100%);
+  background: -webkit-linear-gradient(left, #2e8b57 0%, #2c3e50 100%);
+  background: linear-gradient(to right, #2e8b57 0%, #2c3e50 100%);
   padding: 20px;
   font-size: 20px;
   /* #BDD97D */
