@@ -25,7 +25,7 @@ const routes = [
     component: OfferView,
   },
   {
-    path: "/offer/:id",
+    path: "/offer/:routerName",
     name: "singleOffer",
     component: SingleOfferView,
     props: true,

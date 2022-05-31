@@ -1,5 +1,15 @@
 <template>
   <div>
+    <div id="pathComponent">
+      <div id="pathLeft">
+        <span id="path">{{ getWindow.size }}</span>
+      </div>
+      <div id="pathRight">
+        <router-link id="path" to="/"> Strona Główna / </router-link>
+        <router-link id="path" to="/offer"> Oferta / </router-link>
+        <span id="path">{{ getWindow.routerName }}</span>
+      </div>
+    </div>
     <div id="element">
       <b-card border-variant="secondary">
         <b-container class="bv-example-row bv-example-row-flex-cols">
@@ -13,7 +23,9 @@
             </p> -->
               <p id="link">
                 {{ getWindow.linkdesc[0].name }}
-                <a :href="getWindow.link[0].name">POBIERZ</a>
+                <a id="pdf" :href="getWindow.link[0].name" target="_blank"
+                  >POBIERZ</a
+                >
               </p>
             </b-col>
             <b-col align-self="stretch">
@@ -50,7 +62,9 @@
               </div>
               <p id="link" v-if="getWindow.linkdesc.length == 2">
                 {{ getWindow.linkdesc[1].name }}
-                <a :href="getWindow.link[1].name">POBIERZ</a>
+                <a id="pdf" :href="getWindow.link[1].name" target="_blank"
+                  >POBIERZ</a
+                >
               </p>
             </b-col>
           </b-row>
@@ -65,7 +79,7 @@
 
 <script>
 export default {
-  props: ["id"],
+  props: ["id", "routerName"],
   name: "SingleOfferView",
   computed: {
     getWindow() {
@@ -125,7 +139,7 @@ img {
 #link {
   text-align: center;
 }
-a {
+#pdf {
   text-decoration: none;
   color: #2e8b57;
   font-weight: bold;

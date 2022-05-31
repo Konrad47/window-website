@@ -10,6 +10,7 @@ export default new Vuex.Store({
       {
         id: 1,
         size: "AS 80US",
+        routerName: "AS80US",
         name: "System okienny z ukrytym skrzydłem",
         description: [
           {
@@ -95,6 +96,7 @@ export default new Vuex.Store({
       {
         id: 2,
         size: "AS 178HS",
+        routerName: "AS178HS",
         name: "Drzwi podnoszono-przesuwne",
         description: [
           {
@@ -195,6 +197,7 @@ export default new Vuex.Store({
       {
         id: 3,
         size: "AS VGB",
+        routerName: "ASVGB",
         name: "System balustrad szklanych",
         description: [
           {
@@ -239,6 +242,7 @@ export default new Vuex.Store({
       {
         id: 4,
         size: "AS 75",
+        routerName: "AS75",
         name: "Innowacyjny system okienno-drzwiowy",
         description: [
           {
@@ -334,6 +338,7 @@ export default new Vuex.Store({
       {
         id: 5,
         size: "AS 75EI",
+        routerName: "AS75EI",
         name: "System drzwi przeciwpożarowych",
         description: [
           {
@@ -414,6 +419,7 @@ export default new Vuex.Store({
       {
         id: 6,
         size: "AS 110",
+        routerName: "AS110",
         name: "Pięciokomorowe pasywne okna aluminiowe",
         description: [
           {

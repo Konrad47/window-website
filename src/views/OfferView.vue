@@ -1,24 +1,39 @@
 <template>
-  <div id="windows">
-    <b-card-group v-for="(window, i) in getWindows" :key="i">
-      <router-link
-        :to="{
-          name: 'singleOffer',
-          params: { id: getWindows[i].id },
-        }"
-      >
-        <b-card
-          border-variant="secondary"
-          :header="getWindows[i].size"
-          :title="getWindows[i].name"
-          :img-src="getWindows[i].image1"
-          img-top
-          style="max-width: 18rem"
+  <div>
+    <div id="pathComponent">
+      <div id="pathLeft">
+        <span id="path">Oferta</span>
+      </div>
+      <div id="pathRight">
+        <router-link id="path" to="/"> Strona Główna / </router-link>
+        <span id="path">Oferta</span>
+      </div>
+    </div>
+    <div id="windows">
+      <b-card-group v-for="(window, i) in getWindows" :key="i">
+        <router-link
+          @click.native="scrollToTop"
+          :to="{
+            name: 'singleOffer',
+            params: {
+              id: getWindows[i].id,
+              routerName: getWindows[i].routerName,
+            },
+          }"
         >
-          <b-card-text> </b-card-text>
-        </b-card>
-      </router-link>
-    </b-card-group>
+          <b-card
+            border-variant="secondary"
+            :header="getWindows[i].size"
+            :title="getWindows[i].name"
+            :img-src="getWindows[i].image1"
+            img-top
+            style="max-width: 18rem"
+          >
+            <b-card-text> </b-card-text>
+          </b-card>
+        </router-link>
+      </b-card-group>
+    </div>
   </div>
 </template>
 
@@ -30,8 +45,10 @@ export default {
       return this.$store.state.windows;
     },
   },
-  created() {
-    console.log(this.getWindows);
+  methods: {
+    scrollToTop() {
+      window.scrollTo(0, 0);
+    },
   },
 };
 </script>

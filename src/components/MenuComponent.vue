@@ -2,7 +2,7 @@
   <div>
     <b-navbar id="navbar" toggleable="lg" variant="faded">
       <b-navbar-brand id="nav-img" :to="{ name: 'home' }">
-        <img src="../assets/logo.png" />
+        <img src="../assets/logo.jpg" />
       </b-navbar-brand>
 
       <b-navbar-toggle id="nav-toggle" target="nav-collapse"></b-navbar-toggle>
@@ -49,7 +49,7 @@ export default {
   text-align: left;
 }
 img {
-  width: 50px;
+  width: 70px;
 }
 #nav-img {
   border: none;
