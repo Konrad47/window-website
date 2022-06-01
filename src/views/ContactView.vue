@@ -25,7 +25,7 @@
             <ul>
               <li>
                 <b-icon icon="telephone-fill"></b-icon>
-                <p>123 123 123</p>
+                <p>605 336 336</p>
               </li>
               <li>
                 <b-icon icon="mailbox2"></b-icon>
@@ -37,7 +37,7 @@
               </li>
               <li>
                 <b-icon icon="pin-fill"></b-icon>
-                <p>Lublin ul. Cośtam 3</p>
+                <p>Lublin ul. Dworska 4</p>
               </li>
               <li>
                 <b-icon icon="facebook"></b-icon>
@@ -69,7 +69,19 @@
                 :url="url"
                 :attribution="attribution"
               ></l-tile-layer>
-              <l-marker :lat-lng="markerLatLng" :icon="icon"></l-marker>
+              <l-control position="topright">
+                <button
+                  onclick="window.open('https://www.google.com/maps/dir//M%26D+Auto.+PHU.+Obara+m.,+Dworska+4,+20-135+Lublin/@51.2621887,22.5834534,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47225735f7ac9381:0x8d1ff1e764d31522!2m2!1d22.5861914!2d51.2622123')"
+                  target="_blank"
+                >
+                  SPRAWDŹ DOJAZD
+                </button>
+              </l-control>
+              <l-marker
+                :lat-lng="markerLatLng"
+                :icon="icon"
+                style="color: #2e8b57"
+              ></l-marker>
             </l-map>
           </b-col>
         </b-row>
@@ -79,18 +91,18 @@
 </template>
 
 <script>
-import { LMap, LTileLayer, LMarker } from "vue2-leaflet";
+import { LMap, LTileLayer, LMarker, LControl } from "vue2-leaflet";
 import { icon } from "leaflet";
 import "leaflet/dist/leaflet.css";
 export default {
   data() {
     return {
-      zoom: 11,
-      center: [51.25, 22.56667],
+      zoom: 15,
+      center: [51.2621887, 22.5834534],
       url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
       attribution:
         '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
-      markerLatLng: [51.25444444, 22.56667444],
+      markerLatLng: [51.2621887, 22.5834534],
       icon: icon({
         iconUrl: require("leaflet/dist/images/marker-icon.png"),
         iconSize: [20, 30],
@@ -102,6 +114,7 @@ export default {
     LMap,
     LTileLayer,
     LMarker,
+    LControl,
   },
 };
 </script>
@@ -143,5 +156,16 @@ svg {
 }
 #open {
   margin: 0;
+}
+button {
+  background: #2e8b57;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: BOLD;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  letter-spacing: 0.1rem;
 }
 </style>

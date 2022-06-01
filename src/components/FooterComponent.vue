@@ -11,7 +11,7 @@
       <ul>
         <li>
           <b-icon icon="telephone-fill"></b-icon>
-          <p>123 123 123</p>
+          <p>605 336 336</p>
         </li>
         <li>
           <b-icon icon="mailbox2"></b-icon>
@@ -21,7 +21,7 @@
         </li>
         <li>
           <b-icon icon="pin-fill"></b-icon>
-          <p>Lublin ul. Cośtam 3</p>
+          <p>Lublin ul. Dworska 4</p>
         </li>
       </ul>
     </b-col>
@@ -35,16 +35,16 @@
         >
           <b-icon id="fb" icon="facebook"> </b-icon>
         </button>
-        <button id="write" @click="$router.push('contact')">
+        <button id="write" @click="$router.push('kontakt')">
           Napisz do nas
         </button>
       </div>
     </b-col>
     <b-col>
       <h2>Menu</h2>
-      <h4><router-link id="path" to="/aboutUs">O nas</router-link></h4>
-      <h4><router-link id="path" to="/Offer">Oferta</router-link></h4>
-      <h4><router-link id="path" to="/contact">Kontakt</router-link></h4>
+      <h4><router-link id="path" to="/o-nas">O nas</router-link></h4>
+      <h4><router-link id="path" to="/oferta">Oferta</router-link></h4>
+      <h4><router-link id="path" to="/kontakt">Kontakt</router-link></h4>
     </b-col>
   </b-row>
 </template>
@@ -57,7 +57,7 @@ export default {};
 #footer {
   margin: 0;
   padding-top: 10px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   width: 100%;
   /* height: 200px; */
   background-color: #2c3e50;
@@ -100,6 +100,7 @@ a {
 #fb {
   font-size: 35px;
   color: white;
+  margin-top: 1px;
   padding: 2px;
 }
 #fb-button {
@@ -111,12 +112,13 @@ a {
 }
 #fb-button:hover,
 #write:hover {
-  color: #2e8b57;
+  /* color: #2e8b57; */
+  background: #2e8b57;
   transition: 0.5s;
   border: 2px solid #2e8b57;
 }
 #fb:hover {
-  color: #2e8b57;
+  /* color: #2e8b57; */
   transition: 0.5s;
 }
 #write {

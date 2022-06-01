@@ -58,6 +58,9 @@ export default {
   margin: 20px;
   box-shadow: 0 0 0.5em #2c3e50;
 }
+.card:hover {
+  font-size: 50px;
+}
 .card-header {
   color: #2e8b57;
   font-size: x-large;

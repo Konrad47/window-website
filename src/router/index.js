@@ -15,25 +15,29 @@ const routes = [
     component: HomeView,
   },
   {
-    path: "/aboutUs",
+    path: "/o-nas",
     name: "aboutUs",
     component: AboutUsView,
   },
   {
-    path: "/offer",
+    path: "/oferta",
     name: "offer",
     component: OfferView,
   },
   {
-    path: "/offer/:routerName",
+    path: "/oferta/:routerName",
     name: "singleOffer",
     component: SingleOfferView,
     props: true,
   },
   {
-    path: "/contact",
+    path: "/kontakt",
     name: "contact",
     component: ContactView,
+  },
+  {
+    path: "*",
+    redirect: "/",
   },
 ];
 
