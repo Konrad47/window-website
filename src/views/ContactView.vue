@@ -125,6 +125,10 @@ a {
   text-indent: 1.5em;
   margin-top: 0;
 }
+a:hover {
+  color: #2e8b57;
+  transition: 0.5s;
+}
 ul {
   padding-left: 0;
 }

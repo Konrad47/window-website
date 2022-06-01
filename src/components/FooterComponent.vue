@@ -132,4 +132,8 @@ a {
 #contact {
   display: flex;
 }
+a:hover {
+  color: #2e8b57;
+  transition: 0.5s;
+}
 </style>
