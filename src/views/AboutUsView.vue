@@ -6,7 +6,7 @@
       </div>
       <div id="pathRight">
         <router-link id="path" to="/"> Strona Główna / </router-link>
-        <span id="path">O nas</span>
+        <span id="path" style="font-weight: bold">O nas</span>
       </div>
     </div>
     O nas

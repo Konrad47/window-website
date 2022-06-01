@@ -1,5 +1,44 @@
 <template>
-  <footer>Footer</footer>
+  <b-row id="footer">
+    <b-col>
+      <h1>Firma Okna Pro</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+        voluptatibus, eaque perferendis minima nisi corrupti maiores fugit
+        nostrum consequatur molestias saepe beatae magnam corporis facere
+        distinctio assumenda doloremque. Expedita, ipsum!
+      </p>
+      <ul>
+        <li>
+          <b-icon icon="telephone-fill"></b-icon>
+          <p>123 123 123</p>
+        </li>
+        <li>
+          <b-icon icon="mailbox2"></b-icon>
+          <p>
+            <a href="mailto:oknaprolublin@gmail.com">oknaprolublin@gmail.com</a>
+          </p>
+        </li>
+        <li>
+          <b-icon icon="pin-fill"></b-icon>
+          <p>Lublin ul. Cośtam 3</p>
+        </li>
+      </ul>
+    </b-col>
+    <b-col>
+      <h1>Skontaktuj się z nami</h1>
+      <div id="contact">
+        <b-icon id="fb" icon="facebook"> </b-icon>
+        <button @click="$router.push('contact')">Napisz do nas</button>
+      </div>
+    </b-col>
+    <b-col>
+      <h1>Menu</h1>
+      <h4><router-link id="path" to="/aboutUs">O nas</router-link></h4>
+      <h4><router-link id="path" to="/Offer">Oferta</router-link></h4>
+      <h4><router-link id="path" to="/contact">Kontakt</router-link></h4>
+    </b-col>
+  </b-row>
 </template>
 
 <script>
@@ -7,12 +46,76 @@ export default {};
 </script>
 
 <style scoped>
-footer {
+#footer {
   padding-top: 10px;
+  padding-bottom: 50px;
   width: 100%;
-  height: 200px;
+  /* height: 200px; */
   background-color: #2c3e50;
   color: white;
   text-align: center;
+  /* padding: 50px; */
+  padding-left: 5%;
+  padding-right: 5%;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+h1,
+h4 {
+  text-align: left;
+}
+li {
+  margin-top: 0;
+  display: flex;
+}
+svg {
+  font-size: 20px;
+  margin-top: 3px;
+  color: white;
+}
+p,
+a {
+  text-decoration: none;
+  text-align: justify;
+  text-indent: 1.5em;
+  margin-top: 0;
+  color: white;
+}
+.col {
+  padding-top: 30px;
+  padding-left: 5%;
+}
+#fb {
+  font-size: 50px;
+  /* margin-top: 5px; */
+  color: white;
+  border: 2px solid white;
+  padding: 2px;
+}
+#fb:hover,
+button:hover {
+  color: #2e8b57;
+  transition: 0.5s;
+  border: 2px solid #2e8b57;
+}
+/* #write:hover {
+  color: #2e8b57;
+  transition: 0.5s;
+} */
+button {
+  margin-left: 10px;
+  margin-top: 3px;
+  height: 50px;
+  width: 130px;
+  font-size: 20px;
+  color: white;
+  background: #2c3e50;
+  border: 2px solid white;
+  padding: 7px;
+}
+#contact {
+  display: flex;
 }
 </style>

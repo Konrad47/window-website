@@ -7,7 +7,9 @@
       <div id="pathRight">
         <router-link id="path" to="/"> Strona Główna / </router-link>
         <router-link id="path" to="/offer"> Oferta / </router-link>
-        <span id="path">{{ getWindow.routerName }}</span>
+        <span id="path" style="font-weight: bold">{{
+          getWindow.routerName
+        }}</span>
       </div>
     </div>
     <div id="element">

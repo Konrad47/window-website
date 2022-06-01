@@ -6,7 +6,7 @@
       </div>
       <div id="pathRight">
         <router-link id="path" to="/"> Strona Główna / </router-link>
-        <span id="path">Kontakt</span>
+        <span id="path" style="font-weight: bold">Kontakt</span>
       </div>
     </div>
     <b-card>
@@ -40,8 +40,20 @@
                 <p>Lublin ul. Cośtam 3</p>
               </li>
               <li>
+                <b-icon icon="facebook"></b-icon>
+                <p>
+                  <a href="https://www.facebook.com/" target="_blank">
+                    facebook.com
+                  </a>
+                </p>
+              </li>
+              <li>
                 <b-icon icon="clock-fill"></b-icon>
-                <p>123 123 123</p>
+                <ul>
+                  <p id="open">Godziny otwarcia</p>
+                  <p id="open">pn-pt: 9:00 - 17:00</p>
+                  <p id="open">sb: 9:00 - 14:00</p>
+                </ul>
               </li>
             </ul>
           </b-col>
@@ -95,9 +107,6 @@ export default {
 </script>
 
 <style scoped>
-/* .card {
-  padding-bottom: 150px;
-} */
 #col-1 {
   justify-content: left;
   padding-right: 100px;
@@ -128,9 +137,7 @@ svg {
   margin-top: 5px;
   color: #2e8b57;
 }
-@media (max-width: 800px) {
-  .row {
-    display: inline;
-  }
+#open {
+  margin: 0;
 }
 </style>
