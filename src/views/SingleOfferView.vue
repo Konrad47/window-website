@@ -20,9 +20,6 @@
               <div>
                 <b-img id="img1" :src="getWindow.image1" width="512"></b-img>
               </div>
-              <!-- <p id="link" v-for="(link, i) in getWindow.linkdesc" :key="i">
-              {{ link.name }} <a :href="getWindow.link[i].name">POBIERZ</a>
-            </p> -->
               <p id="link">
                 {{ getWindow.linkdesc[0].name }}
                 <a id="pdf" :href="getWindow.link[0].name" target="_blank"

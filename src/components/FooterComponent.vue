@@ -1,7 +1,7 @@
 <template>
   <b-row id="footer">
     <b-col>
-      <h1>Firma Okna Pro</h1>
+      <h2>Firma Okna Pro</h2>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
         voluptatibus, eaque perferendis minima nisi corrupti maiores fugit
@@ -26,14 +26,22 @@
       </ul>
     </b-col>
     <b-col>
-      <h1>Skontaktuj się z nami</h1>
+      <h2>Skontaktuj się z nami</h2>
       <div id="contact">
-        <b-icon id="fb" icon="facebook"> </b-icon>
-        <button @click="$router.push('contact')">Napisz do nas</button>
+        <button
+          id="fb-button"
+          onclick="window.open('https://www.facebook.com/')"
+          target="_blank"
+        >
+          <b-icon id="fb" icon="facebook"> </b-icon>
+        </button>
+        <button id="write" @click="$router.push('contact')">
+          Napisz do nas
+        </button>
       </div>
     </b-col>
     <b-col>
-      <h1>Menu</h1>
+      <h2>Menu</h2>
       <h4><router-link id="path" to="/aboutUs">O nas</router-link></h4>
       <h4><router-link id="path" to="/Offer">Oferta</router-link></h4>
       <h4><router-link id="path" to="/contact">Kontakt</router-link></h4>
@@ -47,6 +55,7 @@ export default {};
 
 <style scoped>
 #footer {
+  margin: 0;
   padding-top: 10px;
   padding-bottom: 50px;
   width: 100%;
@@ -63,6 +72,7 @@ ul {
   padding-left: 0;
 }
 h1,
+h2,
 h4 {
   text-align: left;
 }
@@ -88,25 +98,29 @@ a {
   padding-left: 5%;
 }
 #fb {
-  font-size: 50px;
-  /* margin-top: 5px; */
+  font-size: 35px;
   color: white;
-  border: 2px solid white;
   padding: 2px;
 }
-#fb:hover,
-button:hover {
+#fb-button {
+  height: 50px;
+  color: white;
+  border: 2px solid white;
+
+  background: #2c3e50;
+}
+#fb-button:hover,
+#write:hover {
   color: #2e8b57;
   transition: 0.5s;
   border: 2px solid #2e8b57;
 }
-/* #write:hover {
+#fb:hover {
   color: #2e8b57;
   transition: 0.5s;
-} */
-button {
+}
+#write {
   margin-left: 10px;
-  margin-top: 3px;
   height: 50px;
   width: 130px;
   font-size: 20px;
