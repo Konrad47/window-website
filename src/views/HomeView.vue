@@ -1,29 +1,36 @@
 <template>
   <div id="el">
-    <div>
+    <div id="carousel">
       <b-carousel
         id="carousel-1"
         style="text-shadow: 0px 0px 2px #000"
+        v-model="slide"
         controls
+        background="#ababab"
         label-next
         label-prev
-        interval
-        no-animation
+        interval="5000"
         indicators="true"
-        img-width="1024"
-        img-height="480"
+        label-indicators
+        fade
+        @sliding-start="onSlideStart"
+        @sliding-end="onSlideEnd"
       >
+        <!-- fade -->
         <b-carousel-slide
+          style="
+            background-image: url('https://picsum.photos/1024/480/?image=54');
+          "
           caption="First Slide"
-          img-src="https://picsum.photos/1024/480/?image=10"
+          :img-src="image1"
         ></b-carousel-slide>
         <b-carousel-slide
           caption="Second Slide"
-          img-src="https://picsum.photos/1024/480/?image=12"
+          :img-src="image2"
         ></b-carousel-slide>
         <b-carousel-slide
           caption="Third Slide"
-          img-src="https://picsum.photos/1024/480/?image=22"
+          :img-src="image3"
         ></b-carousel-slide>
       </b-carousel>
     </div>
@@ -32,20 +39,23 @@
 
 <script>
 export default {
-  // data: function () {
-  //   return {
-  //     slide: 0,
-  //     sliding: null,
-  //   };
-  // },
-  // methods: {
-  //   onSlideStart() {
-  //     this.sliding = true;
-  //   },
-  //   onSlideEnd() {
-  //     this.sliding = false;
-  //   },
-  // },
+  data() {
+    return {
+      slide: 0,
+      sliding: null,
+      image1: require("@/assets/living/silver.jpg"),
+      image2: require("@/assets/living/black.jpg"),
+      image3: require("@/assets/living/white.jpg"),
+    };
+  },
+  methods: {
+    onSlideStart() {
+      this.sliding = true;
+    },
+    onSlideEnd() {
+      this.sliding = false;
+    },
+  },
 };
 </script>
 
@@ -54,11 +64,9 @@ export default {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-body {
-  background-image: url("../assets/1.jpg");
-}
 #carousel-1 {
-  width: 80%;
+  /* width: 90%; */
+  width: 600px;
   margin: auto;
   box-shadow: 0 1em 1em gray;
 }

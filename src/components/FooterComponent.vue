@@ -35,22 +35,42 @@
         >
           <b-icon id="fb" icon="facebook"> </b-icon>
         </button>
-        <button id="write" @click="$router.push('kontakt')">
-          Napisz do nas
-        </button>
+        <button id="write" @click="scrollAndPush">Napisz do nas</button>
       </div>
     </b-col>
     <b-col>
       <h2>Menu</h2>
-      <h4><router-link id="path" to="/o-nas">O nas</router-link></h4>
-      <h4><router-link id="path" to="/oferta">Oferta</router-link></h4>
-      <h4><router-link id="path" to="/kontakt">Kontakt</router-link></h4>
+      <h4>
+        <router-link @click.native="scrollToTop" id="path" to="/o-nas"
+          >O nas</router-link
+        >
+      </h4>
+      <h4>
+        <router-link @click.native="scrollToTop" id="path" to="/oferta"
+          >Oferta</router-link
+        >
+      </h4>
+      <h4>
+        <router-link @click.native="scrollToTop" id="path" to="/kontakt"
+          >Kontakt</router-link
+        >
+      </h4>
     </b-col>
   </b-row>
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    scrollToTop() {
+      window.scrollTo(0, 0);
+    },
+    scrollAndPush() {
+      this.$router.push("kontakt");
+      window.scrollTo(0, 0);
+    },
+  },
+};
 </script>
 
 <style scoped>

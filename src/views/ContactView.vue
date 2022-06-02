@@ -97,12 +97,12 @@ import "leaflet/dist/leaflet.css";
 export default {
   data() {
     return {
-      zoom: 15,
-      center: [51.2621887, 22.5834534],
+      zoom: 13,
+      center: [51.2621388, 22.5863249],
       url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
       attribution:
         '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
-      markerLatLng: [51.2621887, 22.5834534],
+      markerLatLng: [51.2621388, 22.5863249],
       icon: icon({
         iconUrl: require("leaflet/dist/images/marker-icon.png"),
         iconSize: [20, 30],
