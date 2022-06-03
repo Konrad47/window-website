@@ -5,6 +5,9 @@ import AboutUsView from "../views/AboutUsView";
 import OfferView from "../views/OfferView.vue";
 import ContactView from "../views/ContactView.vue";
 import SingleOfferView from "../views/SingleOfferView.vue";
+import OfferPcvView from "../views/OfferPcvView.vue";
+import OfferDoorView from "../views/OfferDoorView.vue";
+import ServiceView from "../views/ServiceView.vue";
 
 Vue.use(VueRouter);
 
@@ -20,12 +23,12 @@ const routes = [
     component: AboutUsView,
   },
   {
-    path: "/oferta",
+    path: "/stolarka-aluminiowa",
     name: "offer",
     component: OfferView,
   },
   {
-    path: "/oferta/:routerName",
+    path: "/stolarka-aluminiowa/:routerName",
     name: "singleOffer",
     component: SingleOfferView,
     props: true,
@@ -34,6 +37,21 @@ const routes = [
     path: "/kontakt",
     name: "contact",
     component: ContactView,
+  },
+  {
+    path: "/stolarka-pcv",
+    name: "offerPcv",
+    component: OfferPcvView,
+  },
+  {
+    path: "/drzwi-aluminiowe",
+    name: "offerDoor",
+    component: OfferDoorView,
+  },
+  {
+    path: "/serwis",
+    name: "service",
+    component: ServiceView,
   },
   {
     path: "*",

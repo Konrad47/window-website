@@ -6,7 +6,9 @@
       </div>
       <div id="pathRight">
         <router-link id="path" to="/"> Strona Główna / </router-link>
-        <router-link id="path" to="/oferta"> Oferta / </router-link>
+        <router-link id="path" to="/stolarka-aluminiowa">
+          Stolarka aluminiowa /
+        </router-link>
         <span id="path" style="font-weight: bold">{{
           getWindow.routerName
         }}</span>

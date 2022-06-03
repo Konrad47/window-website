@@ -46,8 +46,8 @@
         >
       </h4>
       <h4>
-        <router-link @click.native="scrollToTop" id="path" to="/oferta"
-          >Oferta</router-link
+        <router-link @click.native="scrollToTop" id="path" to="/serwis"
+          >Serwis</router-link
         >
       </h4>
       <h4>

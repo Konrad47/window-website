@@ -9,7 +9,6 @@
         background="#ababab"
         label-next
         label-prev
-        interval="5000"
         indicators="true"
         label-indicators
         fade
@@ -43,9 +42,9 @@ export default {
     return {
       slide: 0,
       sliding: null,
-      image1: require("@/assets/living/silver.jpg"),
-      image2: require("@/assets/living/black.jpg"),
-      image3: require("@/assets/living/white.jpg"),
+      image1: require("@/assets/asvgbBalustrada/AS_IGB_slupek-w-fasadzie_564_PL.jpg"),
+      image2: require("@/assets/asvgbBalustrada/AS_VGB.jpg"),
+      image3: require("@/assets/asvgbBalustrada/AS-IGB-slupek-jednoprofilowy_PL.png"),
     };
   },
   methods: {

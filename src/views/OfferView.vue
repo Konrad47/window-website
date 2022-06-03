@@ -2,11 +2,11 @@
   <div>
     <div id="pathComponent">
       <div id="pathLeft">
-        <span id="path">Oferta</span>
+        <span id="path">Stolarka aluminiowa</span>
       </div>
       <div id="pathRight">
         <router-link id="path" to="/"> Strona Główna / </router-link>
-        <span id="path" style="font-weight: bold">Oferta</span>
+        <span id="path" style="font-weight: bold">Stolarka aluminiowa</span>
       </div>
     </div>
     <div id="windows">

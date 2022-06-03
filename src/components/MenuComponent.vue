@@ -10,7 +10,21 @@
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
           <b-nav-item :to="{ name: 'aboutUs' }" id="nav-item">O nas</b-nav-item>
-          <b-nav-item :to="{ name: 'offer' }" id="nav-item">Oferta</b-nav-item>
+          <!-- <b-nav-item :to="{ name: 'offer' }" id="nav-item">Oferta</b-nav-item> -->
+          <b-nav-item-dropdown id="nav-item" text="Oferta" right>
+            <b-dropdown-item :to="{ name: 'offer' }"
+              >Stolarka aluminiowa</b-dropdown-item
+            >
+            <b-dropdown-item :to="{ name: 'offerPcv' }"
+              >Stolarka PCV</b-dropdown-item
+            >
+            <b-dropdown-item :to="{ name: 'offerDoor' }"
+              >Drzwi aluminiowe</b-dropdown-item
+            >
+          </b-nav-item-dropdown>
+          <b-nav-item :to="{ name: 'service' }" id="nav-item"
+            >Serwis</b-nav-item
+          >
           <b-nav-item :to="{ name: 'contact' }" id="nav-item"
             >Kontakt</b-nav-item
           >
