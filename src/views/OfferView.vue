@@ -57,6 +57,7 @@ export default {
 .card {
   margin: 20px;
   box-shadow: 0 0 0.5em #2c3e50;
+  opacity: 90%;
 }
 .card:hover {
   font-size: 50px;

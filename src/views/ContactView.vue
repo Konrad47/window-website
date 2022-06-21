@@ -12,7 +12,7 @@
     <b-card>
       <b-container>
         <b-row>
-          <b-col id="col-1">
+          <b-col cols="9" id="col-1">
             <h1>Firma Okna Pro</h1>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.

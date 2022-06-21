@@ -102,6 +102,7 @@ export default {
   width: 80%;
   margin: auto;
   box-shadow: 0 0 0.5em #2c3e50;
+  opacity: 90%;
 }
 .col {
   padding: 10px;
