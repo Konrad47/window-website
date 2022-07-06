@@ -8,6 +8,7 @@ import SingleOfferView from "../views/SingleOfferView.vue";
 import OfferPcvView from "../views/OfferPcvView.vue";
 import OfferDoorView from "../views/OfferDoorView.vue";
 import ServiceView from "../views/ServiceView.vue";
+import SinglePcvView from "../views/SinglePcvView.vue";
 
 Vue.use(VueRouter);
 
@@ -42,6 +43,12 @@ const routes = [
     path: "/stolarka-pcv",
     name: "offerPcv",
     component: OfferPcvView,
+  },
+  {
+    path: "/stolarka-pcv/:routerName",
+    name: "singlePcv",
+    component: SinglePcvView,
+    props: true,
   },
   {
     path: "/drzwi-aluminiowe",

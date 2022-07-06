@@ -2,7 +2,7 @@
   <div>
     <b-navbar id="navbar" toggleable="lg" variant="faded">
       <b-navbar-brand id="nav-img" :to="{ name: 'home' }">
-        <img src="../assets/logo.jpg" />
+        <img src="../assets/logo.png" />
       </b-navbar-brand>
 
       <b-navbar-toggle id="nav-toggle" target="nav-collapse"></b-navbar-toggle>

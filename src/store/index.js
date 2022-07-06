@@ -489,9 +489,120 @@ export default new Vuex.Store({
         image3: require("@/assets/as110/ikonka_passive_house_institute.png"),
       },
     ],
+    pcv: [
+      //Schüco Alu Inside NORDIC
+      {
+        id: 1,
+        size: "Nordic Alu inside",
+        routerName: "Nordic Alu inside",
+        name: "Schüco Alu Inside NORDIC",
+        description: [
+          {
+            name: "Konstrukcja otwieranego na zewnątrz systemu Schüco Alu Inside Nordic została zatwierdzona przez Technologisk Institut Aarhus w Danii, co potwierdza, że sprawdza się doskonale również w ekstremalnych warunkach pogodowych typowych dla krajów skandynawskich. System z 11 komorową ościeżnicą i 7 komorowym skrzydłem o głębokości 82 mm osiąga współczynnik przenikania ciepła na poziomie Uf=0,87 W/m²K. W innowacyjnej konstrukcji zastosowano sprawdzoną, opatentowaną przez firmę Schüco technologię łączenia PVC z ciągłymi, aluminiowymi wzmocnieniami, która pozwala jednocześnie wyeliminować mostki termiczne, jak i zapewnić optymalną stabilność okna. Dzięki temu możliwe stało się zmniejszenie szerokości czołowej ramy okna (ościeżnicy wraz ze skrzydłem) do zaledwie 94,5 mm, co przekłada się na zwiększenie udziału szyby i jeszcze lepsze doświetlenie wnętrza naturalnym światłem. Dużą zaletą rozwiązania z lekkim, aluminiowym wzmocnieniem jest również fakt, że skrzydło jest znacznie lżejsze niż analogiczna konstrukcja ze stalowym kształtownikiem. ",
+          },
+        ],
+        description2: "Opcje systemu  Alu Inside Nordic:",
+        dots: [
+          {
+            name: "Głębokość zabudowy ościeżnicy – 120 mm",
+          },
+          {
+            name: "Głębokość zabudowy skrzydła – 82 mm",
+          },
+          {
+            name: "Możliwe głębokości przeszklenia – od 18mm do 52mm",
+          },
+          {
+            name: "System okien potwierdzony przez Duński Instytut Technologiczny",
+          },
+          {
+            name: "Grubość ścian wg DIN EN 12608 klasa B",
+          },
+          {
+            name: "Konstrukcja ramy bez stali lub z pianka izolacyjna",
+          },
+          {
+            name: "Otwierane na zewnątrz z możliwością wyboru opcji:",
+            option1: "odchylane na zewnątrz ",
+            option2: "rozwierne na zewnątrz ",
+            option3: "odstawne na zewnątrz z okuciami (ASSA  ABLOY) ",
+          },
+        ],
+        isTableHere: true,
+        descriptionOfTable: "Wybrane cechy i parametry systemu",
+        table: [
+          {
+            name: "Szerokość czołowa",
+            value: "94,5 mm",
+          },
+          {
+            name: "Wartość Uf rama ≥ ",
+            value: "0,87 W/(m²·K)",
+          },
+          {
+            name: "Grubość szyby/panelu, maks.",
+            value: "52 mm",
+          },
+          {
+            name: "Szerokość skrzydła maks.",
+            value: "1500 mm",
+          },
+          {
+            name: "Wysokość skrzydła maks.",
+            value: "2300 mm",
+          },
+          {
+            name: "Przepuszczalnośc powietrza",
+            value: "Klasa 4",
+          },
+          {
+            name: "Odporność na obciążenie wiatrem",
+            value: "Klasa C3",
+          },
+          {
+            name: "Wodoszczelność",
+            value: "E 1200",
+          },
+          {
+            name: "Ciężar skrzydła maks.",
+            value: "250 kg",
+          },
+          {
+            name: "Min. – maks. Wysokość skrzydła",
+            value: "400.....2300 mm",
+          },
+          {
+            name: "Min. - maks. Szerokość skrzydła",
+            value: "400.....1500 mm",
+          },
+          {
+            name: "Grubość szyby/ panelu, min.-maks.",
+            value: "18....52 mm",
+          },
+          {
+            name: "Wykończenie powierzchni",
+            value: "Folie dekoracyjne, AutomotiveFinish",
+          },
+        ],
+        linkdesc: [
+          {
+            name: "",
+          },
+        ],
+        link: [
+          {
+            name: "",
+          },
+        ],
+        numberofImage: 2,
+        image1: require("@/assets/pcv1/aluInsideNordic/Alu_Inside_Nordic_offen.jpg"),
+        image2: require("@/assets/pcv1/aluInsideNordic/nordic_alu.jpg"),
+      },
+    ],
   },
   getters: {
     getWindows: (state, windows) => (state.windows = windows),
+    getPcv: (state, pcv) => (state.pcv = pcv),
   },
   mutations: {},
   actions: {},
