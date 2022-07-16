@@ -40,7 +40,7 @@
               <p>{{ getWindow.description[0].name }}</p>
               <h4>{{ getWindow.description2 }}</h4>
               <ul v-for="(dot, i) in getWindow.dots" :key="i">
-                <li>{{ dot.name }}</li>
+                <li class="list">{{ dot.name }}</li>
               </ul>
             </b-col>
           </b-row>
@@ -110,6 +110,7 @@ h4 {
   text-align: left;
   color: #2e8b57;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 h5 {
   color: #2e8b57;
@@ -124,14 +125,14 @@ p {
 #des3 {
   /* border: 2px solid #2e8b57; */
   font-size: 20px;
-  margin-top: 80px;
+  /* margin-top: 50px; */
   margin-left: 55px;
   max-width: 512px;
 }
 li {
   font-size: 18px;
   text-align: left;
-  margin-top: 0;
+  margin: -10px;
 }
 img {
   margin: 10px;

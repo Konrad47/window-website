@@ -112,6 +112,7 @@ h4 {
   text-align: left;
   color: #2e8b57;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 h5 {
   color: #2e8b57;
@@ -133,7 +134,7 @@ p {
 li {
   font-size: 18px;
   text-align: left;
-  margin-top: 0;
+  margin: -10px;
 }
 img {
   margin: 10px;
