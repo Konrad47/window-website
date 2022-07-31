@@ -591,7 +591,7 @@ export default new Vuex.Store({
         ],
         link: [
           {
-            name: "",
+            name: "https://www.schueco.com/resource/blob/1886820/74545225f95279a47c27dab178e68fbb/Prospekt_P3872.pdf?domain=pl",
           },
         ],
         numberofImage: 2,
@@ -640,7 +640,7 @@ export default new Vuex.Store({
         ],
         link: [
           {
-            name: "",
+            name: "https://www.schueco.com/resource/blob/1886738/7dd9002a2e4aca7da7b54b1c938db39a/P4431_TopAlu.pdf?domain=pl",
           },
         ],
         numberofImage: 2,
@@ -1042,7 +1042,7 @@ export default new Vuex.Store({
         ],
         link: [
           {
-            name: "",
+            name: "https://schuco-poznan.pl/wp-content/uploads/2014/10/Folder-Schuco-drzwi-tarasowe-przesuwne.pdf",
           },
         ],
         numberofImage: 2,

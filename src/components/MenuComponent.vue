@@ -10,7 +10,6 @@
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
           <b-nav-item :to="{ name: 'aboutUs' }" id="nav-item">O nas</b-nav-item>
-          <!-- <b-nav-item :to="{ name: 'offer' }" id="nav-item">Oferta</b-nav-item> -->
           <b-nav-item-dropdown id="nav-item" text="Oferta" right>
             <b-dropdown-item :to="{ name: 'offer' }"
               >Stolarka aluminiowa</b-dropdown-item
@@ -42,12 +41,10 @@ export default {
 
 <style scoped>
 #navbar {
-  /* background: #697dac; */
   color: #e7e7e9;
   box-shadow: 0 0 1em gray;
   padding-right: 10px;
   padding-left: 10px;
-  /* margin-bottom: 1rem; */
 }
 #nav-item {
   font-size: 20px;

@@ -42,9 +42,9 @@ export default {
     return {
       slide: 0,
       sliding: null,
-      image1: require("@/assets/asvgbBalustrada/AS_IGB_slupek-w-fasadzie_564_PL.jpg"),
-      image2: require("@/assets/asvgbBalustrada/AS_VGB.jpg"),
-      image3: require("@/assets/asvgbBalustrada/AS-IGB-slupek-jednoprofilowy_PL.png"),
+      image1: require("@/assets/slider/image1.jpg"),
+      image2: require("@/assets/slider/image2.jpg"),
+      image3: require("@/assets/slider/image3.jpg"),
     };
   },
   methods: {

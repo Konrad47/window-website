@@ -1,62 +1,67 @@
 <template>
-  <b-row id="footer">
-    <b-col>
-      <h2>Firma Okna Pro</h2>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-        voluptatibus, eaque perferendis minima nisi corrupti maiores fugit
-        nostrum consequatur molestias saepe beatae magnam corporis facere
-        distinctio assumenda doloremque. Expedita, ipsum!
-      </p>
-      <ul>
-        <li>
-          <b-icon icon="telephone-fill"></b-icon>
-          <p>605 336 336</p>
-        </li>
-        <li>
-          <b-icon icon="mailbox2"></b-icon>
-          <p>
-            <a href="mailto:oknaprolublin@gmail.com">oknaprolublin@gmail.com</a>
-          </p>
-        </li>
-        <li>
-          <b-icon icon="pin-fill"></b-icon>
-          <p>Lublin ul. Dworska 4</p>
-        </li>
-      </ul>
-    </b-col>
-    <b-col>
-      <h2>Skontaktuj się z nami</h2>
-      <div id="contact">
-        <button
-          id="fb-button"
-          onclick="window.open('https://www.facebook.com/')"
-          target="_blank"
-        >
-          <b-icon id="fb" icon="facebook"> </b-icon>
-        </button>
-        <button id="write" @click="scrollAndPush">Napisz do nas</button>
-      </div>
-    </b-col>
-    <b-col>
-      <h2>Menu</h2>
-      <h4>
-        <router-link @click.native="scrollToTop" id="path" to="/o-nas"
-          >O nas</router-link
-        >
-      </h4>
-      <h4>
-        <router-link @click.native="scrollToTop" id="path" to="/serwis"
-          >Serwis</router-link
-        >
-      </h4>
-      <h4>
-        <router-link @click.native="scrollToTop" id="path" to="/kontakt"
-          >Kontakt</router-link
-        >
-      </h4>
-    </b-col>
-  </b-row>
+  <div id="copyright">
+    <b-row id="footer">
+      <b-col>
+        <h2>Firma Okna Pro</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+          voluptatibus, eaque perferendis minima nisi corrupti maiores fugit
+          nostrum consequatur molestias saepe beatae magnam corporis facere
+          distinctio assumenda doloremque. Expedita, ipsum!
+        </p>
+        <ul>
+          <li>
+            <b-icon icon="telephone-fill"></b-icon>
+            <p>605 336 336</p>
+          </li>
+          <li>
+            <b-icon icon="mailbox2"></b-icon>
+            <p>
+              <a href="mailto:oknaprolublin@gmail.com"
+                >oknaprolublin@gmail.com</a
+              >
+            </p>
+          </li>
+          <li>
+            <b-icon icon="pin-fill"></b-icon>
+            <p>Lublin ul. Dworska 4</p>
+          </li>
+        </ul>
+      </b-col>
+      <b-col>
+        <h2>Skontaktuj się z nami</h2>
+        <div id="contact">
+          <button
+            id="fb-button"
+            onclick="window.open('https://www.facebook.com/')"
+            target="_blank"
+          >
+            <b-icon id="fb" icon="facebook"> </b-icon>
+          </button>
+          <button id="write" @click="scrollAndPush">Napisz do nas</button>
+        </div>
+      </b-col>
+      <b-col>
+        <h2>Menu</h2>
+        <h4>
+          <router-link @click.native="scrollToTop" id="path" to="/o-nas"
+            >O nas</router-link
+          >
+        </h4>
+        <h4>
+          <router-link @click.native="scrollToTop" id="path" to="/serwis"
+            >Serwis</router-link
+          >
+        </h4>
+        <h4>
+          <router-link @click.native="scrollToTop" id="path" to="/kontakt"
+            >Kontakt</router-link
+          >
+        </h4>
+      </b-col>
+    </b-row>
+    Copyright &copy; Konrad Plichta.
+  </div>
 </template>
 
 <script>
@@ -74,16 +79,17 @@ export default {
 </script>
 
 <style scoped>
+#copyright {
+  background-color: #2c3e50;
+  color: white;
+}
 #footer {
   margin: 0;
-  padding-top: 10px;
-  padding-bottom: 30px;
+
   width: 100%;
-  /* height: 200px; */
   background-color: #2c3e50;
   color: white;
   text-align: center;
-  /* padding: 50px; */
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -132,13 +138,11 @@ a {
 }
 #fb-button:hover,
 #write:hover {
-  /* color: #2e8b57; */
   background: #2e8b57;
   transition: 0.5s;
   border: 2px solid #2e8b57;
 }
 #fb:hover {
-  /* color: #2e8b57; */
   transition: 0.5s;
 }
 #write {

@@ -1,22 +1,18 @@
 <template >
   <div id="app">
     <MenuComponent />
-    <!-- <HistoryComponent /> -->
     <router-view :style="image" />
     <FooterComponent />
   </div>
 </template>
 <script>
-// @ is an alias to /src
 import MenuComponent from "@/components/MenuComponent.vue";
 import FooterComponent from "@/components/FooterComponent.vue";
-// import HistoryComponent from "@/components/HistoryComponent.vue";
 export default {
   name: "App",
   components: {
     MenuComponent,
     FooterComponent,
-    // HistoryComponent,
   },
   data() {
     return {
