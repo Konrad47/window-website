@@ -35,10 +35,8 @@ html {
   width: 100%;
   min-height: 100%;
   background-color: #e7e7e9;
-  /* background-image: url("@/assets/1.jpg"); */
 }
 body {
-  /* :style="image" */
 }
 #app {
   font-family: "Roboto Condensed", sans-serif;
@@ -62,7 +60,6 @@ body {
   padding-top: 30px;
   padding-bottom: 30px;
   font-size: 20px;
-  /* #BDD97D */
 }
 #pathLeft {
   font-size: 22px;
@@ -72,7 +69,6 @@ body {
 #path {
   text-decoration: none;
   color: white;
-  /* font-weight: bold; */
   border: none;
 }
 @media (max-width: 992px) {

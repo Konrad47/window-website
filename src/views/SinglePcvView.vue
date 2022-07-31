@@ -30,13 +30,6 @@
             <b-col align-self="stretch">
               <h1>{{ getWindow.size }}</h1>
               <h4>{{ getWindow.name }}</h4>
-              <!-- <p
-              class="mb-0"
-              v-for="(description, i) in getWindow.description"
-              :key="i"
-            >
-              {{ description.name }}
-            </p> -->
               <p>{{ getWindow.description[0].name }}</p>
               <h4>{{ getWindow.description2 }}</h4>
               <ul v-for="(dot, i) in getWindow.dots" :key="i">
