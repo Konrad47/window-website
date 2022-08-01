@@ -191,7 +191,7 @@ export default new Vuex.Store({
         ],
         numberofImage: 2,
         image1: require("@/assets/as178hs/AS178HS_drzwi-_podnoszono_przesuwne.jpg"),
-        image2: require("@/assets/as178hs/AS_178HS_Przekrój-pionowy.png"),
+        image2: require("@/assets/as178hs/AS_178HS_Przekroj-pionowy.png"),
       },
       //AS VGB
       {
@@ -857,7 +857,7 @@ export default new Vuex.Store({
           },
         ],
         numberofImage: 2,
-        image1: require("@/assets/pcv2/schucoLivIngAluInside/alu_inside_bez_wypełnienia.jpg"),
+        image1: require("@/assets/pcv2/schucoLivIngAluInside/alu_inside_bez_wypelnienia.jpg"),
         image2: require("@/assets/pcv2/schucoLivIngAluInside/schueco_living_aluinside.jpg"),
       },
       //Schüco LivIng
@@ -1047,7 +1047,7 @@ export default new Vuex.Store({
         ],
         numberofImage: 2,
         image1: require("@/assets/pcv3/thermoslide/ThermoSlide_e.jpg"),
-        image2: require("@/assets/pcv3/thermoslide/próg_thermoslide.png"),
+        image2: require("@/assets/pcv3/thermoslide/prog_thermoslide.png"),
       },
     ],
   },
