@@ -28,8 +28,8 @@
               </p>
             </b-col>
           </b-row>
+          <h2>Wykonujemy:</h2>
           <b-row>
-            <h2>Wykonujemy:</h2>
             <b-col align-self="baseline">
               <ul>
                 <li>Wymiany uszkodzonych i zerwanych okuć.</li>
@@ -98,6 +98,7 @@
               </p>
             </b-col>
           </b-row>
+          <h2>Nasze realizacje:</h2>
         </b-container>
       </b-card>
     </div>
