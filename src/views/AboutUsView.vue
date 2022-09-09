@@ -102,7 +102,6 @@ h1 {
   text-align: left;
   color: #2e8b57;
   font-weight: bold;
-  position: relative;
 }
 p {
   /* opacity: none; */
@@ -115,9 +114,17 @@ p {
   margin-bottom: 5px;
 }
 #img1 {
-  opacity: none;
   padding-top: 10px;
-  margin: 10px;
   max-width: 600px;
+}
+@media (max-width: 750px) {
+  #img1 {
+    width: 384px;
+  }
+}
+@media (max-width: 400px) {
+  #img1 {
+    width: 300px;
+  }
 }
 </style>

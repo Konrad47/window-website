@@ -9,8 +9,97 @@
         <span id="path" style="font-weight: bold">Serwis</span>
       </div>
     </div>
-    <div class="blink_me">
-      <h1 class="blink">SERWIS CZYNNY 24h/7 DNI W TYGODNIU</h1>
+    <div id="element">
+      <b-card>
+        <div class="blink_me">
+          <h1 class="blink">SERWIS CZYNNY 24h/7 DNI W TYGODNIU</h1>
+        </div>
+        <b-container class="bv-example-row bv-example-row-flex-cols">
+          <b-row>
+            <b-col align-self="baseline">
+              <p>
+                Zakres usług działalności serwisowej naszej firmy jest bardzo
+                rozległy. Nasza firma w usługach serwisowych działa na terenie
+                woj. Lubelskiego wiele lat, z naszych usług skorzystało bardzo
+                wiele firm, osób prywatnych czy deweloperów którzy cieszą się
+                teraz pełnowartościowym produktem jakim jest stolarka otworowa.
+                Działamy na wielu płaszczyznach oraz jesteśmy profesjonalistami
+                w tej dziedzinie.
+              </p>
+            </b-col>
+          </b-row>
+          <b-row>
+            <h2>Wykonujemy:</h2>
+            <b-col align-self="baseline">
+              <ul>
+                <li>Wymiany uszkodzonych i zerwanych okuć.</li>
+                <li>Regulacje okien PCV, DREWNO, ALUMINIUM</li>
+                <li>
+                  Modyfikacje okuć PCV, ALUMINIUM, DREWNO: hamulec w klamce,
+                  dołożenie uchyłu do okien otwieranych na oścież, hamulec
+                  cierny, zatrzask balkonowy, ogranicznik otwarcia 90 stopni.
+                </li>
+                <li>Montaż okuć antywłamaniowych.</li>
+                <li>
+                  Awaryjne otwieranie, rozblokowanie okna po zerwaniu okucia
+                </li>
+                <li>Wymiana uszczelek, PCV, ALU, DREWNO</li>
+                <li>Wymiana pakietów szybowych w PCV, ALUMINIUM, DREWNIE</li>
+                <li>
+                  Zmiana kierunku otwierania skrzydeł z prawych na lewe i na
+                  odwrót.
+                </li>
+                <li>
+                  Renowacja starych okien PCV, DREWNIANYCH, ALU, Odnowienie
+                  starych oklein, powłok lakierniczych, wymiana lakieru na
+                  oknach drewnianych.
+                </li>
+              </ul>
+            </b-col>
+            <b-col align-self="stretch">
+              <ul>
+                <li>
+                  Możliwość dołożenia przycisku otwarcia do nowoczesnych drzwi z
+                  pochwytem rurowym.
+                </li>
+                <li>
+                  Montaż automatyki okiennej i drzwiowej: siłowniki do okien,
+                  drzwi, sterowanie okien drzwi na pilot lub z przycisku.
+                </li>
+                <li>
+                  Montaż osprzętu przeciw pożarowego do ciągów ewakuacyjnych na
+                  inwestycjach, wyposażenie w samozamykacze, automatyczne
+                  ryglowanie skrzydeł.
+                </li>
+                <li>
+                  Zmiana otwierania drzwi wejściowych z klamki na elektrozaczep
+                </li>
+                <li>Naprawa dużych okien HS, PSK</li>
+                <li>
+                  Naprawa Uszkodzeń okleiny, pęknięć profili, wypełnianie
+                  ubytków okleiny
+                </li>
+                <li>Naprawa/Renowacja SPALONYCH, NADPALONYCH okien</li>
+                <li>Zmiana koloru okien PCV/ DREWNO na kolor jednolity RAL.</li>
+                <li>
+                  Czyszczenie okien z PIANY montażowej, świeżej i zaschniętej.
+                </li>
+              </ul>
+            </b-col>
+          </b-row>
+          <b-row>
+            <b-col align-self="baseline">
+              <p>
+                Wykonujemy szereg innych usług serwisowych, jeśli są Państwo
+                zainteresowani naszą ofertą lub nie znaleźliście tutaj
+                interesującego zagadnienia proszę o zapytanie mailowe lub
+                kontakt telefoniczny, chętnie doradzimy oraz przyjedziemy do
+                bezpłatnej wyceny u Państwa na miejscu.
+              </p>
+            </b-col>
+          </b-row>
+        </b-container>
+      </b-card>
     </div>
   </div>
 </template>
@@ -19,7 +108,7 @@
 export default {};
 </script>
 
-<style>
+<style scoped>
 .blink_me {
   animation: blinker 1.5s linear infinite;
 }
@@ -32,5 +121,29 @@ export default {};
 .blink {
   color: #a7171a;
   font-weight: bold;
+}
+#col-1 {
+  justify-content: left;
+  padding-right: 100px;
+}
+p {
+  /* opacity: none; */
+  font-size: 20px;
+  text-decoration: none;
+  color: #2c3e50;
+  text-align: justify;
+  text-indent: 1.5em;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+h2 {
+  text-align: left;
+  color: #2e8b57;
+  font-weight: bold;
+}
+li {
+  font-size: 18px;
+  text-align: left;
+  /* margin: -10px; */
 }
 </style>
