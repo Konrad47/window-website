@@ -4,10 +4,9 @@
       <b-col>
         <h2>Firma Okna Pro</h2>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-          voluptatibus, eaque perferendis minima nisi corrupti maiores fugit
-          nostrum consequatur molestias saepe beatae magnam corporis facere
-          distinctio assumenda doloremque. Expedita, ipsum!
+          Pozostajemy do Państwa dyspozycji. Zachęcamy do zamówienia bezpłatnej
+          wizyty na Twojej inwestycji naszego fachowca, który przygotuje
+          indywidualnie dobraną ofertę stolarki budowlanej.
         </p>
         <ul>
           <li>
@@ -17,9 +16,7 @@
           <li>
             <b-icon icon="mailbox2"></b-icon>
             <p>
-              <a href="mailto:oknaprolublin@gmail.com"
-                >oknaprolublin@gmail.com</a
-              >
+              <a href="mailto:biuro@oknapro.pro">biuro@oknapro.pro</a>
             </p>
           </li>
           <li>

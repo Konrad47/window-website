@@ -15,10 +15,9 @@
           <b-col cols="9" id="col-1">
             <h1>Firma Okna Pro</h1>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Laboriosam voluptatibus, eaque perferendis minima nisi corrupti
-              maiores fugit nostrum consequatur molestias saepe beatae magnam
-              corporis facere distinctio assumenda doloremque. Expedita, ipsum!
+              Pozostajemy do Państwa dyspozycji. Zachęcamy do zamówienia
+              bezpłatnej wizyty na Twojej inwestycji naszego fachowca, który
+              przygotuje indywidualnie dobraną ofertę stolarki budowlanej.
             </p>
           </b-col>
           <b-col>
@@ -30,23 +29,21 @@
               <li>
                 <b-icon icon="mailbox2"></b-icon>
                 <p>
-                  <a href="mailto:oknaprolublin@gmail.com"
-                    >oknaprolublin@gmail.com</a
-                  >
+                  <a href="mailto:biuro@oknapro.pro">biuro@oknapro.pro</a>
                 </p>
               </li>
               <li>
                 <b-icon icon="pin-fill"></b-icon>
                 <p>Lublin ul. Dworska 4</p>
               </li>
-              <li>
+              <!-- <li>
                 <b-icon icon="facebook"></b-icon>
                 <p>
                   <a href="https://www.facebook.com/" target="_blank">
                     facebook.com
                   </a>
                 </p>
-              </li>
+              </li> -->
               <li>
                 <b-icon icon="clock-fill"></b-icon>
                 <ul>

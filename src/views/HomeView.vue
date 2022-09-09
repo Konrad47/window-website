@@ -20,17 +20,10 @@
           style="
             background-image: url('https://picsum.photos/1024/480/?image=54');
           "
-          caption="First Slide"
           :img-src="image1"
         ></b-carousel-slide>
-        <b-carousel-slide
-          caption="Second Slide"
-          :img-src="image2"
-        ></b-carousel-slide>
-        <b-carousel-slide
-          caption="Third Slide"
-          :img-src="image3"
-        ></b-carousel-slide>
+        <b-carousel-slide :img-src="image2"></b-carousel-slide>
+        <b-carousel-slide :img-src="image3"></b-carousel-slide>
       </b-carousel>
     </div>
   </div>
@@ -60,12 +53,10 @@ export default {
 
 <style scoped>
 #el {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
 }
 #carousel-1 {
-  /* width: 90%; */
-  width: 600px;
+  max-width: 600px;
   margin: auto;
   box-shadow: 0 1em 1em gray;
 }

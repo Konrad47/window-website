@@ -9,7 +9,12 @@
         <span id="path" style="font-weight: bold">O nas</span>
       </div>
     </div>
-    O nas
+    OKNAPRO to firma powstała z pasji do estetyki stolarki otworowej.
+    <br />
+    Początkowo zajmowaliśmy się serwisem oraz naprawą okien - nawet tych
+    najbardziej zniszczonych, które inne firmy uznawały za niemożliwe do
+    naprawienia. Widząc zadowolenie naszych klientów postanowiliśmy pójść o krok
+    dalej.
   </div>
 </template>
 
