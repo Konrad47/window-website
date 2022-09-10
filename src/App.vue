@@ -17,7 +17,7 @@ export default {
   data() {
     return {
       image: {
-        backgroundImage: `url(${require("@/assets/3.png")})`,
+        backgroundImage: `url(${require("@/assets/1.png")})`,
         width: "100%",
         height: "100%",
       },
