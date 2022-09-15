@@ -78,9 +78,6 @@ export default {
       return this.$store.state.pcv[this.id - 1];
     },
   },
-  created() {
-    console.log(this.getWindow);
-  },
 };
 </script>
 

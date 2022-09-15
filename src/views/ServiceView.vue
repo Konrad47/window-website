@@ -2,11 +2,11 @@
   <div>
     <div id="pathComponent">
       <div id="pathLeft">
-        <span id="path">Serwis</span>
+        <span id="path">Serwis 24/7</span>
       </div>
       <div id="pathRight">
         <router-link id="path" to="/"> Strona Główna / </router-link>
-        <span id="path" style="font-weight: bold">Serwis</span>
+        <span id="path" style="font-weight: bold">Serwis 24/7</span>
       </div>
     </div>
     <div id="element">
@@ -24,6 +24,32 @@
               teraz pełnowartościowym produktem jakim jest stolarka otworowa.
               Działamy na wielu płaszczyznach oraz jesteśmy profesjonalistami w
               tej dziedzinie.
+            </p>
+          </b-col>
+        </b-row>
+        <h2>Cennik:</h2>
+        <b-row>
+          <b-col>
+            <table>
+              <tr>
+                <td>Wymiana szyb w oknach</td>
+                <td>Wycena indywidualna</td>
+              </tr>
+              <tr>
+                <td>Awaryjne otwarcie okna po zerwaniu okucia</td>
+                <td>200 zł</td>
+              </tr>
+              <tr>
+                <td>
+                  Awaryjne otwieranie drzwi wejściowych do mieszkań po zgubieniu
+                  klucza
+                </td>
+                <td>300 zł</td>
+              </tr>
+            </table>
+            <p>
+              <span class="red">*</span> Minimalna cena usługi serwisowej z
+              dojazdem do klienta na terenie Lublina i okolic to 130 zł
             </p>
           </b-col>
         </b-row>
@@ -99,7 +125,7 @@
         </b-row>
         <h2>Nasze realizacje:</h2>
         <b-row class="row-rel">
-          <h3>Frezowanie nawiewników</h3>
+          <h3><b-icon icon="arrow-right"></b-icon> Frezowanie nawiewników</h3>
           <b-col align-self="baseline">
             <h4>Przed:</h4>
             <b-img id="img1" :src="image1" width="500"></b-img>
@@ -117,7 +143,7 @@
         </b-row>
         <hr />
         <b-row class="row-rel">
-          <h3>Malowanie całych okien</h3>
+          <h3><b-icon icon="arrow-right"></b-icon> Malowanie całych okien</h3>
           <b-col align-self="baseline">
             <h4>Przed:</h4>
             <b-img id="img1" :src="image3" width="500"></b-img>
@@ -138,7 +164,7 @@
         </b-row>
         <hr />
         <b-row class="row-rel">
-          <h3>Moskitiery</h3>
+          <h3><b-icon icon="arrow-right"></b-icon> Moskitiery</h3>
           <b-col align-self="baseline">
             <h4>Po wykonaniu:</h4>
             <b-img id="img1" :src="image5" width="500"></b-img>
@@ -157,7 +183,9 @@
         </b-row>
         <hr />
         <b-row class="row-rel">
-          <h3>Naprawa pęknięcia obok zgrzewu</h3>
+          <h3>
+            <b-icon icon="arrow-right"></b-icon> Naprawa pęknięcia obok zgrzewu
+          </h3>
           <b-col align-self="baseline">
             <h4>Przed:</h4>
             <b-img id="img1" :src="image7" width="500"></b-img>
@@ -176,7 +204,7 @@
         </b-row>
         <hr />
         <b-row class="row-rel">
-          <h3>Odtworzenie okleiny</h3>
+          <h3><b-icon icon="arrow-right"></b-icon> Odtworzenie okleiny</h3>
           <b-col align-self="baseline">
             <h4>Przed:</h4>
             <b-img id="img1" :src="image9" width="500"></b-img>
@@ -194,7 +222,7 @@
         </b-row>
         <hr />
         <b-row class="row-rel">
-          <h3>Prostowanie wygięcia</h3>
+          <h3><b-icon icon="arrow-right"></b-icon> Prostowanie wygięcia</h3>
           <b-col align-self="baseline">
             <h4>Przed:</h4>
             <b-img id="img1" :src="image11" width="500"></b-img>
@@ -211,7 +239,10 @@
         </b-row>
         <hr />
         <b-row class="row-rel">
-          <h3>Rekonstrukcja narożnika skrzydła</h3>
+          <h3>
+            <b-icon icon="arrow-right"></b-icon> Rekonstrukcja narożnika
+            skrzydła
+          </h3>
           <b-col align-self="baseline">
             <h4>Przed:</h4>
             <b-img id="img1" :src="image13" width="500"></b-img>
@@ -228,7 +259,7 @@
         </b-row>
         <hr />
         <b-row class="row-rel">
-          <h3>Rysy i ubytki</h3>
+          <h3><b-icon icon="arrow-right"></b-icon> Rysy i ubytki</h3>
           <b-col align-self="baseline">
             <h4>Przed:</h4>
             <b-img id="img1" :src="image15" width="500"></b-img>
@@ -245,7 +276,9 @@
         </b-row>
         <hr />
         <b-row class="row-rel">
-          <h3>Spalona rama po grzaniu papy</h3>
+          <h3>
+            <b-icon icon="arrow-right"></b-icon> Spalona rama po grzaniu papy
+          </h3>
           <b-col align-self="baseline">
             <h4>Przed:</h4>
             <b-img id="img1" :src="image17" width="500"></b-img>
@@ -265,7 +298,9 @@
         </b-row>
         <hr />
         <b-row class="row-rel">
-          <h3>Spalona rama po grzaniu papy</h3>
+          <h3>
+            <b-icon icon="arrow-right"></b-icon> Spalona rama po grzaniu papy
+          </h3>
           <b-col align-self="baseline">
             <h4>Przed:</h4>
             <b-img id="img1" :src="image19" width="500"></b-img>
@@ -285,7 +320,7 @@
         </b-row>
         <hr />
         <b-row class="row-rel">
-          <h3>Uszkodzenia okleiny</h3>
+          <h3><b-icon icon="arrow-right"></b-icon> Uszkodzenia okleiny</h3>
           <b-col align-self="baseline">
             <h4>Przed:</h4>
             <b-img id="img1" :src="image21" width="500"></b-img>
@@ -306,7 +341,10 @@
         </b-row>
         <hr />
         <b-row class="row-rel">
-          <h3>Zerwana przewiązka pozioma skrzydła PCV</h3>
+          <h3>
+            <b-icon icon="arrow-right"></b-icon> Zerwana przewiązka pozioma
+            skrzydła PCV
+          </h3>
           <b-col align-self="baseline">
             <h4>Przed:</h4>
             <b-img id="img1" :src="image23" width="500"></b-img>
@@ -385,6 +423,9 @@ export default {
   letter-spacing: 0.3rem;
   font-size: 3rem;
 }
+.red {
+  color: #a7171a;
+}
 #col-1 {
   justify-content: left;
   padding-right: 100px;
@@ -393,28 +434,29 @@ p {
   /* opacity: none; */
   font-size: 20px;
   text-decoration: none;
-  color: black;
+  color: #2c3e50;
+  font-weight: bold;
   text-align: justify;
   text-indent: 1.5em;
   margin-top: 0;
   margin-bottom: 5px;
 }
 h2,
-h4 {
+h3 {
   text-align: left;
   color: #2e8b57;
   font-weight: bold;
 }
-h3 {
+h4 {
   text-align: left;
-
-  color: #2e8b57;
+  color: #2c3e50;
   font-weight: bold;
 }
 li {
   font-size: 18px;
   text-align: left;
-  color: black;
+  color: #2c3e50;
+  font-weight: bold;
   /* margin: -10px; */
 }
 .row-rel {
@@ -425,6 +467,20 @@ hr {
 }
 hr:not([size]) {
   height: 3px;
+}
+table,
+th,
+td {
+  border: 2px solid #2c3e50;
+  text-align: left;
+  padding: 10px;
+  color: #2c3e50;
+  font-size: 18px;
+  font-weight: bold;
+}
+table {
+  width: 100%;
+  margin-bottom: 10px;
 }
 @media (max-width: 600px) {
   #img1 {

@@ -45,13 +45,13 @@
       <b-col>
         <h2>Menu</h2>
         <h4>
-          <router-link @click.native="scrollToTop" id="path" to="/o-nas"
-            >O nas</router-link
+          <router-link @click.native="scrollToTop" id="path" to="/serwis"
+            >Serwis 24/7</router-link
           >
         </h4>
         <h4>
-          <router-link @click.native="scrollToTop" id="path" to="/serwis"
-            >Serwis</router-link
+          <router-link @click.native="scrollToTop" id="path" to="/o-nas"
+            >O nas</router-link
           >
         </h4>
         <h4>

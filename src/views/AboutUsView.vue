@@ -105,11 +105,10 @@ h1 {
   font-weight: bold;
 }
 p {
-  /* opacity: none; */
   font-size: 20px;
   text-decoration: none;
-  /* color: #2c3e50; */
-  color: black;
+  color: #2c3e50;
+  font-weight: bold;
   text-align: justify;
   text-indent: 1.5em;
   margin-top: 0;
