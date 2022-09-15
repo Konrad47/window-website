@@ -9,6 +9,9 @@
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
+          <b-nav-item :to="{ name: 'service' }" id="nav-item"
+            ><span class="service">Serwis 24/7</span></b-nav-item
+          >
           <b-nav-item :to="{ name: 'aboutUs' }" id="nav-item">O nas</b-nav-item>
           <b-nav-item-dropdown id="nav-item" text="Oferta" right>
             <b-dropdown-item :to="{ name: 'offer' }"
@@ -21,9 +24,6 @@
               >Drzwi aluminiowe</b-dropdown-item
             >
           </b-nav-item-dropdown>
-          <b-nav-item :to="{ name: 'service' }" id="nav-item"
-            >Serwis</b-nav-item
-          >
           <b-nav-item :to="{ name: 'contact' }" id="nav-item"
             >Kontakt</b-nav-item
           >
@@ -64,5 +64,17 @@ img {
 }
 #nav-img {
   border: none;
+}
+.service {
+  color: #a7171a !important;
+  font-weight: bold !important;
+}
+.service:hover {
+  animation: blinker 0.5s linear infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 </style>
