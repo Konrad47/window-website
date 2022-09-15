@@ -24,13 +24,21 @@
             <ul>
               <li>
                 <b-icon icon="telephone-fill"></b-icon>
-                <p>605 336 336</p>
+                <ul>
+                  <p class="p-nested">605 336 336,</p>
+                  <p class="p-nested">512 985 986</p>
+                </ul>
               </li>
               <li>
                 <b-icon icon="mailbox2"></b-icon>
-                <p>
-                  <a href="mailto:biuro@oknapro.pro">biuro@oknapro.pro</a>
-                </p>
+                <ul>
+                  <p class="p-nested">
+                    <a href="mailto:biuro@oknapro.pro">biuro@oknapro.pro,</a>
+                  </p>
+                  <p class="p-nested">
+                    <a href="mailto:serwis@oknapro.pro">serwis@oknapro.pro</a>
+                  </p>
+                </ul>
               </li>
               <li>
                 <b-icon icon="pin-fill"></b-icon>
@@ -135,6 +143,9 @@ a {
   text-indent: 1.5em;
   margin-top: 0;
 }
+.p-nested {
+  margin: 0;
+}
 a:hover {
   color: #2e8b57;
   transition: 0.5s;
@@ -144,6 +155,7 @@ ul {
 }
 li {
   margin-top: 0;
+  margin-bottom: 10px;
   display: flex;
 }
 svg {

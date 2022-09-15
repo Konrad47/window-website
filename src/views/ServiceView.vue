@@ -99,35 +99,42 @@
           </b-col>
         </b-row>
         <h2>Nasze realizacje:</h2>
-        <b-row>
+        <b-row class="row-rel">
+          <h3>Frezowanie nawiewników</h3>
           <b-col align-self="baseline">
-            <b-card>
-              <b-img id="img1" :src="image" width="512"></b-img>
-            </b-card>
+            <h4>Przed:</h4>
+            <b-img id="img1" :src="image" width="423"></b-img>
           </b-col>
-          <b-col align-self="stretch">
-            <p class="img-p">
-              Nasza firma zajmuje się również frezowaniem otworów pod
-              nawiewniki, oraz montażem nawiewników. Realizujemy najtródniejsze
-              zlecenia nawet w bardzo ciężkich warunkach. Jesteśmy w stanie
-              odfrezować otwory w każdym oknie.
-            </p></b-col
-          >
+          <b-col align-self="baseline">
+            <h4>Po:</h4>
+            <b-img id="img1" :src="image" width="423"></b-img>
+          </b-col>
+          <!-- <b-col align-self="stretch"> -->
+          <p class="img-p">
+            Nasza firma zajmuje się również frezowaniem otworów pod nawiewniki,
+            oraz montażem nawiewników. Realizujemy najtródniejsze zlecenia nawet
+            w bardzo ciężkich warunkach. Jesteśmy w stanie odfrezować otwory w
+            każdym oknie.
+          </p>
         </b-row>
-        <b-row>
-          <b-col align-self="stretch">
-            <p class="img-p">
-              Nasza firma zajmuje się również frezowaniem otworów pod
-              nawiewniki, oraz montażem nawiewników. Realizujemy najtródniejsze
-              zlecenia nawet w bardzo ciężkich warunkach. Jesteśmy w stanie
-              odfrezować otwory w każdym oknie.
-            </p></b-col
-          >
+        <hr />
+        <b-row class="row-rel">
+          <h3>Frezowanie nawiewników</h3>
           <b-col align-self="baseline">
-            <b-card>
-              <b-img id="img1" :src="image" width="512"></b-img>
-            </b-card>
+            <h4>Przed:</h4>
+            <b-img id="img1" :src="image" width="423"></b-img>
           </b-col>
+          <b-col align-self="baseline">
+            <h4>Po:</h4>
+            <b-img id="img1" :src="image" width="423"></b-img>
+          </b-col>
+          <!-- <b-col align-self="stretch"> -->
+          <p class="img-p">
+            Nasza firma zajmuje się również frezowaniem otworów pod nawiewniki,
+            oraz montażem nawiewników. Realizujemy najtródniejsze zlecenia nawet
+            w bardzo ciężkich warunkach. Jesteśmy w stanie odfrezować otwory w
+            każdym oknie.
+          </p>
         </b-row>
       </b-container>
       <!-- </b-card> -->
@@ -139,7 +146,7 @@
 export default {
   data() {
     return {
-      image: require("@/assets/aboutUs/aboutus.png"),
+      image: require("@/assets/aboutUs/aboutus2.png"),
     };
   },
 };
@@ -152,9 +159,9 @@ export default {
 #img1 {
   max-width: 500px;
 }
-.img-p {
+/* .img-p {
   margin-top: 100px;
-}
+} */
 #element {
   padding: 1rem 1rem;
 }
@@ -187,8 +194,13 @@ p {
   margin-top: 0;
   margin-bottom: 5px;
 }
-h2 {
+h2,
+h4 {
   text-align: left;
+  color: #2e8b57;
+  font-weight: bold;
+}
+h3 {
   color: #2e8b57;
   font-weight: bold;
 }
@@ -197,5 +209,14 @@ li {
   text-align: left;
   color: black;
   /* margin: -10px; */
+}
+.row-rel {
+  margin-top: 20px !important;
+}
+hr {
+  color: #2e8b57;
+}
+hr:not([size]) {
+  height: 3px;
 }
 </style>

@@ -11,12 +11,16 @@
         <ul>
           <li>
             <b-icon icon="telephone-fill"></b-icon>
-            <p>605 336 336</p>
+            <p>605336336,</p>
+            <p class="p-second">512985986</p>
           </li>
           <li>
             <b-icon icon="mailbox2"></b-icon>
             <p>
-              <a href="mailto:biuro@oknapro.pro">biuro@oknapro.pro</a>
+              <a href="mailto:biuro@oknapro.pro">biuro@oknapro.pro,</a>
+            </p>
+            <p class="p-second">
+              <a href="mailto:serwis@oknapro.pro">serwis@oknapro.pro</a>
             </p>
           </li>
           <li>
@@ -28,13 +32,13 @@
       <b-col>
         <h2>Skontaktuj się z nami</h2>
         <div id="contact">
-          <button
+          <!-- <button
             id="fb-button"
             onclick="window.open('https://www.facebook.com/')"
             target="_blank"
           >
             <b-icon id="fb" icon="facebook"> </b-icon>
-          </button>
+          </button> -->
           <button id="write" @click="scrollAndPush">Napisz do nas</button>
         </div>
       </b-col>
@@ -116,6 +120,10 @@ a {
   margin-top: 0;
   color: white;
 }
+.p-second {
+  margin-left: 5px;
+  text-indent: 0;
+}
 .col {
   padding-top: 30px;
   padding-left: 5%;
@@ -143,7 +151,7 @@ a {
   transition: 0.5s;
 }
 #write {
-  margin-left: 10px;
+  /* margin-left: 10px; */
   height: 50px;
   width: 130px;
   font-size: 20px;
