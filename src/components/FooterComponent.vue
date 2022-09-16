@@ -151,7 +151,6 @@ a {
   transition: 0.5s;
 }
 #write {
-  /* margin-left: 10px; */
   height: 50px;
   width: 130px;
   font-size: 20px;

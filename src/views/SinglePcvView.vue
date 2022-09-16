@@ -113,9 +113,7 @@ p {
   margin-top: 0;
 }
 #des3 {
-  /* border: 2px solid #2e8b57; */
   font-size: 20px;
-  /* margin-top: 50px; */
   margin-left: 55px;
   max-width: 512px;
 }

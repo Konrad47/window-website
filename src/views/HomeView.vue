@@ -15,7 +15,6 @@
         @sliding-start="onSlideStart"
         @sliding-end="onSlideEnd"
       >
-        <!-- fade -->
         <b-carousel-slide
           style="
             background-image: url('https://picsum.photos/1024/480/?image=54');

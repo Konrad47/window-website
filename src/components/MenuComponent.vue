@@ -66,12 +66,12 @@ img {
   border: none;
 }
 .service {
-  font-style: italic;
   color: #a7171a !important;
   font-weight: bold !important;
 }
 .service:hover {
-  animation: blinker 0.5s linear infinite;
+  animation: blinker 0.8s linear infinite;
+  /* color: #91090c !important; */
 }
 @keyframes blinker {
   50% {

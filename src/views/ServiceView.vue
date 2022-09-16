@@ -402,9 +402,6 @@ export default {
 #img1 {
   max-width: 600px;
 }
-/* .img-p {
-  margin-top: 100px;
-} */
 #element {
   padding: 1rem 1rem;
 }
@@ -431,7 +428,6 @@ export default {
   padding-right: 100px;
 }
 p {
-  /* opacity: none; */
   font-size: 20px;
   text-decoration: none;
   color: #2c3e50;
@@ -457,7 +453,6 @@ li {
   text-align: left;
   color: #2c3e50;
   font-weight: bold;
-  /* margin: -10px; */
 }
 .row-rel {
   margin-top: 20px !important;

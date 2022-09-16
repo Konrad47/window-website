@@ -10,7 +10,6 @@
       </div>
     </div>
     <div id="element">
-      <!-- <b-card> -->
       <b-container class="bv-example-row bv-example-row-flex-cols">
         <b-row>
           <b-col align-self="baseline">
@@ -26,7 +25,6 @@
               estetyki oraz trwałości stolarki otworowej postanowiliśmy
               przedstawić jej kompleksowy zakres obsługi.
             </p>
-            <!-- <p></p> -->
             <p>
               Pracownicy naszej firmy posiadają szeroki zakres kompetencji oraz
               wiedzy dotyczącej stolarki otworowej, co umożliwia nam
@@ -68,11 +66,9 @@
               Twojej inwestycji naszego fachowca, który przygotuje indywidualnie
               dobraną ofertę stolarki budowlanej.
             </p>
-            <!-- <p></p> -->
           </b-col>
         </b-row>
       </b-container>
-      <!-- </b-card> -->
     </div>
   </div>
 </template>
@@ -90,9 +86,6 @@ export default {
 <style scoped>
 #element {
   padding: 1rem 1rem;
-}
-.card {
-  /* opacity: 80%; */
 }
 
 #col-1 {
