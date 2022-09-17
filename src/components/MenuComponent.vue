@@ -20,9 +20,6 @@
             <b-dropdown-item :to="{ name: 'offerPcv' }"
               >Stolarka PCV</b-dropdown-item
             >
-            <!-- <b-dropdown-item :to="{ name: 'offerDoor' }"
-              >Drzwi aluminiowe</b-dropdown-item
-            > -->
           </b-nav-item-dropdown>
           <b-nav-item :to="{ name: 'contact' }" id="nav-item"
             >Kontakt</b-nav-item
@@ -47,8 +44,7 @@ export default {
   padding-left: 10px;
 }
 #nav-item {
-  font-size: 20px;
-  letter-spacing: 0.1rem;
+  font-size: 1.7rem;
   font-weight: bold;
   padding-right: 20px;
 }
@@ -60,7 +56,8 @@ export default {
   text-align: left;
 }
 img {
-  width: 70px;
+  vertical-align: middle;
+  width: 120px;
 }
 #nav-img {
   border: none;
@@ -71,7 +68,6 @@ img {
 }
 .service:hover {
   animation: blinker 0.8s linear infinite;
-  /* color: #91090c !important; */
 }
 @keyframes blinker {
   50% {

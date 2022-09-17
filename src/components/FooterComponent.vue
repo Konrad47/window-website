@@ -32,13 +32,6 @@
       <b-col>
         <h2>Skontaktuj się z nami</h2>
         <div id="contact">
-          <!-- <button
-            id="fb-button"
-            onclick="window.open('https://www.facebook.com/')"
-            target="_blank"
-          >
-            <b-icon id="fb" icon="facebook"> </b-icon>
-          </button> -->
           <button id="write" @click="scrollAndPush">Napisz do nas</button>
         </div>
       </b-col>
@@ -86,7 +79,6 @@ export default {
 }
 #footer {
   margin: 0;
-
   width: 100%;
   background-color: #2c3e50;
   color: white;

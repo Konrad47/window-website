@@ -6,7 +6,6 @@ import OfferView from "../views/OfferView.vue";
 import ContactView from "../views/ContactView.vue";
 import SingleOfferView from "../views/SingleOfferView.vue";
 import OfferPcvView from "../views/OfferPcvView.vue";
-// import OfferDoorView from "../views/OfferDoorView.vue";
 import ServiceView from "../views/ServiceView.vue";
 import SinglePcvView from "../views/SinglePcvView.vue";
 
@@ -50,11 +49,6 @@ const routes = [
     component: SinglePcvView,
     props: true,
   },
-  // {
-  //   path: "/drzwi-aluminiowe",
-  //   name: "offerDoor",
-  //   component: OfferDoorView,
-  // },
   {
     path: "/serwis",
     name: "service",

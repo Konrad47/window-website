@@ -44,14 +44,6 @@
                 <b-icon icon="pin-fill"></b-icon>
                 <p>Lublin ul. Dworska 4</p>
               </li>
-              <!-- <li>
-                <b-icon icon="facebook"></b-icon>
-                <p>
-                  <a href="https://www.facebook.com/" target="_blank">
-                    facebook.com
-                  </a>
-                </p>
-              </li> -->
               <li>
                 <b-icon icon="clock-fill"></b-icon>
                 <ul>

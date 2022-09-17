@@ -45,6 +45,7 @@ body {
   text-align: center;
   color: #2c3e50;
   background-color: #e7e7e9;
+  height: 100%;
 }
 .router-link-active {
   border-bottom: 2px solid #2e8b57;
