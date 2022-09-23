@@ -2,7 +2,7 @@
   <div id="el">
     <b-container>
       <b-row>
-        <b-col>
+        <b-col class="logo-col">
           <div class="logo-window">
             <div>
               <img :src="image5" />
@@ -77,10 +77,14 @@ img {
   width: 200px;
   margin-bottom: 80px;
 }
-.logo-window {
-  padding-top: 50px;
-  padding-bottom: 50px;
+.logo-col {
+  margin: auto;
   text-align: left;
+  padding-left: 8%;
+}
+.logo-window {
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 #carousel-1 {
   max-width: 600px;
