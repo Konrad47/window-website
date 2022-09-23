@@ -74,12 +74,13 @@ export default {
   padding: 20px;
 }
 img {
-  width: 400px;
+  width: 200px;
   margin-bottom: 80px;
 }
 .logo-window {
   padding-top: 50px;
   padding-bottom: 50px;
+  text-align: left;
 }
 #carousel-1 {
   max-width: 600px;
@@ -90,7 +91,7 @@ img {
 h1 {
   color: #0b4191;
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 2rem;
   letter-spacing: 0.01rem;
 }
 @media (max-width: 600px) {
