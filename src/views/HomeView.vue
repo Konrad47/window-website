@@ -80,7 +80,7 @@ img {
 .logo-col {
   margin: auto;
   text-align: left;
-  padding-left: 8%;
+  padding-left: 10%;
 }
 .logo-window {
   padding-top: 80px;
