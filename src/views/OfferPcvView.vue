@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :style="image">
     <div id="pathComponent">
       <div id="pathLeft">
         <span id="path">Stolarka PCV</span>
@@ -40,6 +40,15 @@
 <script>
 export default {
   name: "OfferPcvView",
+  data() {
+    return {
+      image: {
+        backgroundImage: `url(${require("@/assets/1.png")})`,
+        width: "100%",
+        height: "100%",
+      },
+    };
+  },
   computed: {
     getWindows() {
       return this.$store.state.pcv;

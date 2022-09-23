@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :style="image1">
     <div id="pathComponent">
       <div id="pathLeft">
         <span id="path">O nas</span>
@@ -77,6 +77,11 @@
 export default {
   data() {
     return {
+      image1: {
+        backgroundImage: `url(${require("@/assets/1.png")})`,
+        width: "100%",
+        height: "100%",
+      },
       image: require("@/assets/aboutUs/aboutus.png"),
     };
   },

@@ -1,5 +1,5 @@
 <template>
-  <div id="el">
+  <div id="el" :style="image">
     <b-container>
       <b-row>
         <b-col class="logo-col">
@@ -51,6 +51,11 @@ export default {
     return {
       slide: 0,
       sliding: null,
+      image: {
+        backgroundImage: `url(${require("@/assets/2.png")})`,
+        width: "100%",
+        height: "100%",
+      },
       image1: require("@/assets/slider/image1.jpg"),
       image2: require("@/assets/slider/image2.jpg"),
       image3: require("@/assets/slider/image3.jpg"),

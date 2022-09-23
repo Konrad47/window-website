@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :style="image">
     <div id="pathComponent">
       <div id="pathLeft">
         <span id="path">{{ getWindow.size }}</span>
@@ -75,6 +75,15 @@
 export default {
   props: ["id", "routerName"],
   name: "SingleOfferView",
+  data() {
+    return {
+      image: {
+        backgroundImage: `url(${require("@/assets/1.png")})`,
+        width: "100%",
+        height: "100%",
+      },
+    };
+  },
   computed: {
     getWindow() {
       return this.$store.state.windows[this.id - 1];
