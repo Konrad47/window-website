@@ -27,23 +27,108 @@
             </p>
           </b-col>
         </b-row>
-        <h2>Cennik:</h2>
+        <h2>Przybliżone ceny usług serwisowych:</h2>
         <b-row>
           <b-col>
             <table>
               <tr>
-                <td>Wymiana szyb w oknach</td>
-                <td>Wycena indywidualna</td>
+                <td>Przegląd stolarki (sprawdzenie, smarowanie okuć)</td>
+                <td>20 zł/szt. Min 100 zł</td>
+              </tr>
+              <tr>
+                <td>Regulacja okien PCV na odkrytych zawiasach</td>
+                <td>35 zł/szt. Min 100 zł</td>
+              </tr>
+              <tr>
+                <td>Regulacja okien PCV z krytymi zawiasami</td>
+                <td>40 zł/szt. Min 100 zł</td>
+              </tr>
+              <tr>
+                <td>Regulacja okien drewnianych</td>
+                <td>50 zł/szt. Min 100 zł</td>
+              </tr>
+              <tr>
+                <td>Regulacja okien Aluminiowych</td>
+                <td>50 zł/szt. Min 100 zł</td>
+              </tr>
+              <tr>
+                <td>Regulacja drzwi aluminiowych</td>
+                <td>150 zł</td>
+              </tr>
+              <tr>
+                <td>
+                  Zmiana geometrii skrzydła (Przeszklenie) PCV/ALUMINIUM/DREWNO
+                </td>
+                <td>60/80/200 zł bez regulacji</td>
+              </tr>
+              <tr>
+                <td>
+                  Zmiana kierunku otwierania okna ( z prawego na lewe i na
+                  odwrót)
+                </td>
+                <td>
+                  400 zł jednoskrzydłowe, 700 zł dwuskrzydłowe plus koszt
+                  okucia.
+                </td>
+              </tr>
+              <tr>
+                <td>Wymiana klamki</td>
+                <td>30 zł za klamkę plus robocizna Min 100 zł</td>
+              </tr>
+              <tr>
+                <td>
+                  Wymiana pakietu szybowego w zależności od wymiaru i piętra.
+                </td>
+                <td>150 – 250 zł</td>
+              </tr>
+              <tr>
+                <td>Montaż zatrzasku balkonowego</td>
+                <td>100 zł plus cena zatrzasku (60 zł)</td>
+              </tr>
+              <tr>
+                <td>Wymiana uszczelek w oknach</td>
+                <td>14zł / metr</td>
+              </tr>
+              <tr>
+                <td>Wymiana okuć w oknach (wymiana mechanizmów)</td>
+                <td>od 200zł / skrzydło</td>
+              </tr>
+              <tr>
+                <td>
+                  Wymiana okuć w oknach balkonowych (wymiana zasównicy innych
+                  części)
+                </td>
+                <td>od 300zł / skrzydło</td>
+              </tr>
+              <tr>
+                <td>Modyfikacje okucia</td>
+                <td>Cena okucia + roboczo godzina 140 zł</td>
+              </tr>
+              <tr>
+                <td>Montaż nawiewników</td>
+                <td>30 zł/szt. Min 100 zł</td>
+              </tr>
+              <tr>
+                <td>Frezowanie otworu pod nawiewnik</td>
+                <td>140 zł</td>
+              </tr>
+              <tr>
+                <td>Czyszczenie okuć</td>
+                <td>120 zł / godzina</td>
               </tr>
               <tr>
                 <td>Awaryjne otwarcie okna po zerwaniu okucia</td>
-                <td>200 zł</td>
+                <td>250 zł</td>
               </tr>
               <tr>
                 <td>
                   Awaryjne otwieranie drzwi wejściowych do mieszkań po zgubieniu
                   klucza
                 </td>
+                <td>300 zł</td>
+              </tr>
+              <tr>
+                <td>Bezzasadne wezwanie serwisu</td>
                 <td>300 zł</td>
               </tr>
             </table>
@@ -475,12 +560,15 @@ td {
   text-align: left;
   padding: 10px;
   color: #2c3e50;
+  background-color: #fff;
   font-size: 18px;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 table {
-  width: 100%;
+  /* width: 100%; */
   margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (max-width: 600px) {
   #img1 {

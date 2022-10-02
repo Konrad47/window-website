@@ -5,10 +5,10 @@
         <b-col class="logo-col">
           <div class="logo-window">
             <div>
-              <img :src="image5" />
+              <img :src="image1" />
             </div>
             <div>
-              <img :src="image4" />
+              <img :src="image2" />
             </div>
             <h1>Okna PCV i ALUMINIUM</h1>
           </div>
@@ -29,13 +29,12 @@
               @sliding-start="onSlideStart"
               @sliding-end="onSlideEnd"
             >
-              <b-carousel-slide
-                style="
-                  background-image: url('https://picsum.photos/1024/480/?image=54');
-                "
-                :img-src="image1"
-              ></b-carousel-slide>
-              <b-carousel-slide :img-src="image2"></b-carousel-slide>
+              <b-carousel-slide :img-src="image4"></b-carousel-slide>
+              <b-carousel-slide :img-src="image5"></b-carousel-slide>
+              <b-carousel-slide :img-src="image6"></b-carousel-slide>
+              <b-carousel-slide :img-src="image7"></b-carousel-slide>
+              <b-carousel-slide :img-src="image8"></b-carousel-slide>
+              <b-carousel-slide :img-src="image9"></b-carousel-slide>
               <b-carousel-slide :img-src="image3"></b-carousel-slide>
             </b-carousel>
           </div>
@@ -56,11 +55,15 @@ export default {
         width: "100%",
         height: "100%",
       },
-      image1: require("@/assets/slider/image1.jpg"),
-      image2: require("@/assets/slider/image2.jpg"),
-      image3: require("@/assets/slider/image3.jpg"),
-      image4: require("@/assets/home/aluron.svg"),
-      image5: require("@/assets/home/schueco.png"),
+      image1: require("@/assets/home/aluron.svg"),
+      image2: require("@/assets/home/schueco.png"),
+      image3: require("@/assets/slider/1.jpg"),
+      image4: require("@/assets/slider/2.jpg"),
+      image5: require("@/assets/slider/3.jpg"),
+      image6: require("@/assets/slider/4.jpg"),
+      image7: require("@/assets/slider/5.jpg"),
+      image8: require("@/assets/slider/6.jpg"),
+      image9: require("@/assets/slider/7.jpg"),
     };
   },
   methods: {
@@ -94,6 +97,8 @@ img {
 #carousel-1 {
   max-width: 600px;
   min-width: 500px;
+  max-height: 600px;
+  min-height: 500px;
   margin: auto;
   box-shadow: 0 1em 1em gray;
 }
